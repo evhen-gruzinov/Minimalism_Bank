@@ -14,6 +14,8 @@
 		49D36F78291A4CF4002CEF2F /* License.md in Resources */ = {isa = PBXBuildFile; fileRef = 49D36F76291A4CF2002CEF2F /* License.md */; };
 		49D36F79291A4CF4002CEF2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 49D36F77291A4CF3002CEF2F /* README.md */; };
 		49D36F7C291A4EE4002CEF2F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 49D36F7B291A4EE4002CEF2F /* Alamofire */; };
+		49D36F80291A517D002CEF2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F7F291A517D002CEF2F /* Double.swift */; };
+		49D36F83291A5AEB002CEF2F /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F82291A5AEB002CEF2F /* BalanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49D36F76291A4CF2002CEF2F /* License.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
 		49D36F77291A4CF3002CEF2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		49D36F7F291A517D002CEF2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		49D36F82291A5AEB002CEF2F /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				49D36F68291A4C80002CEF2F /* SimpleBankApp.swift */,
-				49D36F6A291A4C80002CEF2F /* ContentView.swift */,
+				49D36F7E291A5168002CEF2F /* Extentions */,
+				49D36F7D291A4F53002CEF2F /* Views */,
 				49D36F6C291A4C83002CEF2F /* Assets.xcassets */,
 				49D36F6E291A4C83002CEF2F /* Preview Content */,
 			);
@@ -73,6 +78,31 @@
 				49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49D36F7D291A4F53002CEF2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F81291A5AAB002CEF2F /* Blocks */,
+				49D36F6A291A4C80002CEF2F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49D36F7E291A5168002CEF2F /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F7F291A517D002CEF2F /* Double.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		49D36F81291A5AAB002CEF2F /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F82291A5AEB002CEF2F /* BalanceView.swift */,
+			);
+			path = Blocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D36F6B291A4C80002CEF2F /* ContentView.swift in Sources */,
+				49D36F83291A5AEB002CEF2F /* BalanceView.swift in Sources */,
+				49D36F80291A517D002CEF2F /* Double.swift in Sources */,
 				49D36F69291A4C80002CEF2F /* SimpleBankApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SimpleBankApp: App {
+    var moneyBalance:Double = 1234.00 .rounded(toPlaces: 2)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(moneyBalance: moneyBalance)
         }
     }
 }
