@@ -8,12 +8,19 @@
 import SwiftUI
 
 @main
-struct SimpleBankApp: App {
-    var moneyBalance:Double = 1234.00 .rounded(toPlaces: 2)
+struct SimpleBankApp: App {    
+    //var accountBalance: Double = 1234.00 .rounded(toPlaces: 2)
+//    var accountBalance: Double = Double(UserData().getAccountBalance())
+    @State var accountBalance: Int = 0
     
     var body: some Scene {
         WindowGroup {
-            ContentView(moneyBalance: moneyBalance)
+            MainScreen(accountBalance: accountBalance)
+                .onAppear(perform: {
+                    UserData().getAccountBalance { accountBalance in
+                        self.accountBalance = accountBalance
+                    }
+                })
         }
     }
 }

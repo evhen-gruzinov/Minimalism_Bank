@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct BalanceView: View {
-    var accountBalance: String
+    var accountBalance: Int
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Balance")
-                Text(accountBalance)
+                // TODO: placeholder while loading data from server
+                Text(Formating().moneyFormating(moneyValue: accountBalance))
                     .font(.title)
                     .bold()
             }
             Spacer()
             
             Button("Transactions") {
+
             }
             .foregroundColor(Color.white)
             .bold()
@@ -37,7 +39,7 @@ struct BalanceView: View {
 struct BalanceView_Previews: PreviewProvider {
     static var previews: some View {
         BalanceView(
-            accountBalance: "$1,234.56"
+            accountBalance: 123456
         )
     }
 }
