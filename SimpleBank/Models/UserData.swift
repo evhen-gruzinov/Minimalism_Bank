@@ -10,7 +10,6 @@ import Alamofire
 
 struct UserData {
     let userToken = "PRv7xXESmpRdr8"
-    //let userId = 1
     
     func getAccountBalance(completion: @escaping (Int) -> Void) {
         let parameters: [String: Any] = [

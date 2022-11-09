@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct MainScreen: View {
-    var accountBalance: Int
-//    @State var accountBalance: Int
+    var accountBalance: Int?
     
     var body: some View {
         VStack {
@@ -24,7 +23,7 @@ struct MainScreen: View {
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         MainScreen(
-            accountBalance: 5555//.12.rounded(toPlaces: 2)
+            accountBalance: 555512
         )
     }
 }

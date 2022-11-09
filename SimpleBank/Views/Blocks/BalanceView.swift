@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct BalanceView: View {
-    var accountBalance: Int
+    var accountBalance: Int?
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Balance")
-                // TODO: placeholder while loading data from server
-                Text(Formating().moneyFormating(moneyValue: accountBalance))
-                    .font(.title)
-                    .bold()
+                if let accountBalance = accountBalance {
+                    Text(Formating().moneyFormating(moneyValue: accountBalance))
+                        .font(.title)
+                        .bold()
+                } else {
+                    Text("Loading...")
+                        .font(.title)
+                        .bold()
+                }
             }
             Spacer()
             
