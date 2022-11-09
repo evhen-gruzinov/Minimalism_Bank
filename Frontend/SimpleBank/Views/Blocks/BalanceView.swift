@@ -14,15 +14,9 @@ struct BalanceView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Balance")
-                if let accountBalance = accountBalance {
-                    Text(Formating().moneyFormating(moneyValue: accountBalance))
-                        .font(.title)
-                        .bold()
-                } else {
-                    Text("Loading...")
-                        .font(.title)
-                        .bold()
-                }
+                Text(accountBalance != nil ? Formating().moneyFormating(moneyValue: accountBalance!) : "Loading...")
+                    .font(.title)
+                    .fontWeight(.bold)
             }
             Spacer()
             
@@ -30,7 +24,7 @@ struct BalanceView: View {
 
             }
             .foregroundColor(Color.white)
-            .bold()
+            .font(Font.headline.weight(.bold))
             .padding(10)
             .background(Color.black)
             .cornerRadius(15)

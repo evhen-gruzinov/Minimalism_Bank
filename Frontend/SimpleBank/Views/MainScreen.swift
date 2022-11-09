@@ -9,21 +9,44 @@ import SwiftUI
 
 struct MainScreen: View {
     var accountBalance: Int?
+    var transactions: [Transaction]
     
     var body: some View {
-        VStack {
-            BalanceView(accountBalance: accountBalance)
-            Spacer()
+        ZStack {
+            Color(red: 0.949, green: 0.949, blue: 0.949).ignoresSafeArea()
+            ScrollView {
+                BalanceView(accountBalance: accountBalance)
+                
+                HStack {
+                    Text("Recent transactions:")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                    Spacer()
+                }
+                .padding(.top, 25)
+                VStack {
+                    if let transactions = transactions {
+                        ForEach(transactions) { transaction in
+                            TransactionView(transaction: transaction)
+                            if transaction.id != transactions.last?.id {
+                                Divider()
+                            }
+                        }
+                    }
+                }
+                .padding()
+                .background(Color.white)
+                .cornerRadius(15)
+                Spacer()
+            }.padding()
         }
-        .padding()
-        .background(Color(red: 0.949, green: 0.949, blue: 0.949))
     }
 }
 
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         MainScreen(
-            accountBalance: 555512
+            transactions: [Transaction(id: 1, userId: 1, accountId: 1, amount: 12345, title: "Apple", dateStr: "9 Nov", category: .electronic, type: .outcome, state: .performed)]
         )
     }
 }

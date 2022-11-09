@@ -14,7 +14,7 @@ class Formating {
         let currencyFormatter = NumberFormatter()
         currencyFormatter.usesGroupingSeparator = true
         currencyFormatter.numberStyle = .currency
-        currencyFormatter.locale = Locale.current
+        currencyFormatter.locale = Locale(identifier: "en-US")
         
         let formatedString = currencyFormatter.string(from: NSNumber(value: moneyValueDouble))!
         return formatedString

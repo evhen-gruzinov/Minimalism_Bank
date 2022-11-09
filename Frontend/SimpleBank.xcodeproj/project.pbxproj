@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49B3C175291AC11500426145 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C174291AC11500426145 /* UserData.swift */; };
+		49B3C175291AC11500426145 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C174291AC11500426145 /* Account.swift */; };
 		49B3C177291B1AF800426145 /* Formating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C176291B1AF800426145 /* Formating.swift */; };
 		49D36F69291A4C80002CEF2F /* SimpleBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F68291A4C80002CEF2F /* SimpleBankApp.swift */; };
 		49D36F6B291A4C80002CEF2F /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F6A291A4C80002CEF2F /* MainScreen.swift */; };
@@ -16,10 +16,12 @@
 		49D36F7C291A4EE4002CEF2F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 49D36F7B291A4EE4002CEF2F /* Alamofire */; };
 		49D36F80291A517D002CEF2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F7F291A517D002CEF2F /* Double.swift */; };
 		49D36F83291A5AEB002CEF2F /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F82291A5AEB002CEF2F /* BalanceView.swift */; };
+		49FA1175291BC1C50043E560 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1174291BC1C50043E560 /* Transaction.swift */; };
+		49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1176291BF41C0043E560 /* TransactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		49B3C174291AC11500426145 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		49B3C174291AC11500426145 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		49B3C176291B1AF800426145 /* Formating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formating.swift; sourceTree = "<group>"; };
 		49D36F65291A4C80002CEF2F /* SimpleBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D36F68291A4C80002CEF2F /* SimpleBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBankApp.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49D36F7F291A517D002CEF2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		49D36F82291A5AEB002CEF2F /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		49FA1174291BC1C50043E560 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		49FA1176291BF41C0043E560 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +49,9 @@
 		49B3C173291AC0E000426145 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				49B3C174291AC11500426145 /* UserData.swift */,
+				49B3C174291AC11500426145 /* Account.swift */,
 				49B3C176291B1AF800426145 /* Formating.swift */,
+				49FA1174291BC1C50043E560 /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				49D36F82291A5AEB002CEF2F /* BalanceView.swift */,
+				49FA1176291BF41C0043E560 /* TransactionView.swift */,
 			);
 			path = Blocks;
 			sourceTree = "<group>";
@@ -191,8 +197,10 @@
 			files = (
 				49D36F6B291A4C80002CEF2F /* MainScreen.swift in Sources */,
 				49D36F83291A5AEB002CEF2F /* BalanceView.swift in Sources */,
+				49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */,
+				49FA1175291BC1C50043E560 /* Transaction.swift in Sources */,
 				49D36F80291A517D002CEF2F /* Double.swift in Sources */,
-				49B3C175291AC11500426145 /* UserData.swift in Sources */,
+				49B3C175291AC11500426145 /* Account.swift in Sources */,
 				49D36F69291A4C80002CEF2F /* SimpleBankApp.swift in Sources */,
 				49B3C177291B1AF800426145 /* Formating.swift in Sources */,
 			);
@@ -251,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -305,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

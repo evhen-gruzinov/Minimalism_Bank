@@ -10,15 +10,19 @@ import SwiftUI
 @main
 struct SimpleBankApp: App {
     @State var accountBalance: Int?
+    @State var accountTransactions: [Transaction] = []
     
     var body: some Scene {
         WindowGroup {
-            MainScreen(accountBalance: accountBalance)
-                .onAppear(perform: {
-                    UserData().getAccountBalance { accountBalance in
-                        self.accountBalance = accountBalance
-                    }
-                })
+            MainScreen(accountBalance: accountBalance, transactions: accountTransactions)
+                .onAppear {
+                    Account().getBalance(completion: { balance in
+                        accountBalance = balance
+                    })
+                    Account().getTransactions(completion: { transactions in
+                        accountTransactions = transactions
+                    })
+                }
         }
     }
 }
