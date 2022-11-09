@@ -1,15 +1,16 @@
 import mysql.connector
 from fastapi import FastAPI
 from pydantic import BaseModel
+import dblogins
 
 app = FastAPI()
 
 mydb = mysql.connector.connect(
-  host="21h.h.filess.io",
-  port=3305,
-  user="SimpleBank_patternrod",
-  password="fbfdb7d9325b77033dc4b9eadfd7405398efbb2d",
-  database="SimpleBank_patternrod"
+  host=dblogins.host,
+  port=dblogins.port,
+  user=dblogins.user,
+  password=dblogins.password,
+  database=dblogins.database
 )
 
 cursor = mydb.cursor(buffered=True)
@@ -24,8 +25,6 @@ class ForTransactions(BaseModel):
 
 @app.get("/test")
 async def test():
-    # cursor.close()
-    # mydb.close()
     return {"message": "Test answer"}
 
 
@@ -44,9 +43,6 @@ async def get_balance(inputdata: TokenProvided):
     row = cursor.fetchone()
     if row is None:
         return {"has_error": 2, "error_description": "User don't have bank account"}
-
-    # cursor.close()
-    # mydb.close()
 
     return {"balance": row[2]}
 
@@ -82,8 +78,5 @@ async def get_transactions(inputdata: ForTransactions):
             "date": row[7].strftime("%Y-%m-%d"),
             "state": row[8]
         })
-
-    # cursor.close()
-    # mydb.close()
 
     return transactions
