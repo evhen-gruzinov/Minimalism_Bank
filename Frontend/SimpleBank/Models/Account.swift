@@ -21,8 +21,6 @@ struct Balance: Codable {
 }
 
 extension Account {
-    
-    
     func getBalance(completion: @escaping (Int) -> Void) {
         let parameters: [String: Any] = [
             "token": userToken
@@ -39,10 +37,10 @@ extension Account {
         }
     }
     
-    func getTransactions(completion: @escaping (Array<Transaction>) -> Void) {
+    func getTransactions(count: Int, completion: @escaping (Array<Transaction>) -> Void) {
         let parameters: [String: Any] = [
             "token": userToken,
-            "is_limited": true
+            "count": count
         ]
                 
         AF.request("https://jfxfba.deta.dev/gettransactions",

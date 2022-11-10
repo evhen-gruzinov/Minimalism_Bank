@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct SimpleBankApp: App {
     @State var accountBalance: Int?
-    @State var accountTransactions: [Transaction] = []
+    @State var accountTransactions: [Transaction]?
     
     var body: some Scene {
         WindowGroup {
@@ -19,7 +19,7 @@ struct SimpleBankApp: App {
                     Account().getBalance(completion: { balance in
                         accountBalance = balance
                     })
-                    Account().getTransactions(completion: { transactions in
+                    Account().getTransactions(count: 5, completion: { transactions in
                         accountTransactions = transactions
                     })
                 }

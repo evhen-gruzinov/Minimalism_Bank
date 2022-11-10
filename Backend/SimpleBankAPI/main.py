@@ -20,7 +20,7 @@ class TokenProvided(BaseModel):
 
 class ForTransactions(BaseModel):
     token: str
-    is_limited: bool
+    count: int
 
 
 @app.get("/test")
@@ -49,7 +49,7 @@ async def get_balance(inputdata: TokenProvided):
 @app.post("/gettransactions")
 async def get_transactions(inputdata: ForTransactions):
     token = inputdata.token
-    is_limited = inputdata.is_limited
+    count = inputdata.count
 
     cursor.execute('SELECT * FROM user_tokens WHERE token = %s', (token,))
     row = cursor.fetchone()
@@ -57,9 +57,9 @@ async def get_transactions(inputdata: ForTransactions):
         return {"has_error": 1, "error_description": "Token is wrong"}
     user_id = row[1]
 
-    query = "SELECT * FROM `transactions` WHERE `user_id` = %s"
-    if is_limited:
-        query += " LIMIT 5"
+    query = "SELECT * FROM `transactions` WHERE `user_id` = %s ORDER BY `date` DESC"
+    if count > 0:
+        query += " LIMIT " + str(count)
 
     cursor.execute(query, (user_id,))
     transactions_rows = cursor.fetchall()

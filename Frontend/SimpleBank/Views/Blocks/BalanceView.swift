@@ -38,7 +38,7 @@ struct BalanceView: View {
 struct BalanceView_Previews: PreviewProvider {
     static var previews: some View {
         BalanceView(
-            accountBalance: 123456
+            accountBalance: 567855
         )
     }
 }

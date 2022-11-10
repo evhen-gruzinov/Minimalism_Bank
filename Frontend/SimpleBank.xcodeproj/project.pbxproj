@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4981B75A291CF5A900AE497F /* SimpleBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981B759291CF5A900AE497F /* SimpleBankTests.swift */; };
 		49B3C175291AC11500426145 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C174291AC11500426145 /* Account.swift */; };
 		49B3C177291B1AF800426145 /* Formating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C176291B1AF800426145 /* Formating.swift */; };
 		49D36F69291A4C80002CEF2F /* SimpleBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F68291A4C80002CEF2F /* SimpleBankApp.swift */; };
@@ -20,7 +21,19 @@
 		49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1176291BF41C0043E560 /* TransactionView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4981B75B291CF5A900AE497F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D36F5D291A4C80002CEF2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D36F64291A4C80002CEF2F;
+			remoteInfo = SimpleBank;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4981B757291CF5A900AE497F /* SimpleBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4981B759291CF5A900AE497F /* SimpleBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBankTests.swift; sourceTree = "<group>"; };
 		49B3C174291AC11500426145 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		49B3C176291B1AF800426145 /* Formating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formating.swift; sourceTree = "<group>"; };
 		49D36F65291A4C80002CEF2F /* SimpleBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4981B754291CF5A900AE497F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49D36F62291A4C80002CEF2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4981B758291CF5A900AE497F /* SimpleBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				4981B759291CF5A900AE497F /* SimpleBankTests.swift */,
+			);
+			path = SimpleBankTests;
+			sourceTree = "<group>";
+		};
 		49B3C173291AC0E000426145 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				49D36F67291A4C80002CEF2F /* SimpleBank */,
+				4981B758291CF5A900AE497F /* SimpleBankTests */,
 				49D36F66291A4C80002CEF2F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				49D36F65291A4C80002CEF2F /* SimpleBank.app */,
+				4981B757291CF5A900AE497F /* SimpleBankTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +152,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4981B756291CF5A900AE497F /* SimpleBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4981B75F291CF5A900AE497F /* Build configuration list for PBXNativeTarget "SimpleBankTests" */;
+			buildPhases = (
+				4981B753291CF5A900AE497F /* Sources */,
+				4981B754291CF5A900AE497F /* Frameworks */,
+				4981B755291CF5A900AE497F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4981B75C291CF5A900AE497F /* PBXTargetDependency */,
+			);
+			name = SimpleBankTests;
+			productName = SimpleBankTests;
+			productReference = 4981B757291CF5A900AE497F /* SimpleBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		49D36F64291A4C80002CEF2F /* SimpleBank */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49D36F73291A4C83002CEF2F /* Build configuration list for PBXNativeTarget "SimpleBank" */;
@@ -152,6 +200,10 @@
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					4981B756291CF5A900AE497F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 49D36F64291A4C80002CEF2F;
+					};
 					49D36F64291A4C80002CEF2F = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -174,11 +226,19 @@
 			projectRoot = "";
 			targets = (
 				49D36F64291A4C80002CEF2F /* SimpleBank */,
+				4981B756291CF5A900AE497F /* SimpleBankTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4981B755291CF5A900AE497F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49D36F63291A4C80002CEF2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,6 +251,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4981B753291CF5A900AE497F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4981B75A291CF5A900AE497F /* SimpleBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49D36F61291A4C80002CEF2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,7 +276,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4981B75C291CF5A900AE497F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D36F64291A4C80002CEF2F /* SimpleBank */;
+			targetProxy = 4981B75B291CF5A900AE497F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4981B75D291CF5A900AE497F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4PV26QJD2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.SimpleBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleBank";
+			};
+			name = Debug;
+		};
+		4981B75E291CF5A900AE497F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4PV26QJD2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.SimpleBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleBank";
+			};
+			name = Release;
+		};
 		49D36F71291A4C83002CEF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -384,6 +498,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4981B75F291CF5A900AE497F /* Build configuration list for PBXNativeTarget "SimpleBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4981B75D291CF5A900AE497F /* Debug */,
+				4981B75E291CF5A900AE497F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49D36F60291A4C80002CEF2F /* Build configuration list for PBXProject "SimpleBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

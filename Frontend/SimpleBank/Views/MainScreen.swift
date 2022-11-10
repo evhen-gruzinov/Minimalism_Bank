@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainScreen: View {
     var accountBalance: Int?
-    var transactions: [Transaction]
+    var transactions: [Transaction]?
     
     var body: some View {
         ZStack {
@@ -46,7 +46,8 @@ struct MainScreen: View {
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         MainScreen(
-            transactions: [Transaction(id: 1, userId: 1, accountId: 1, amount: 12345, title: "Apple", dateStr: "2022-07-23", category: .electronic, type: .outcome, state: .performed)]
+            accountBalance: 567855,
+            transactions: [Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .income, state: .performed)]
         )
     }
 }

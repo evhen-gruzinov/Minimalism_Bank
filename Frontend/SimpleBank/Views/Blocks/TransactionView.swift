@@ -45,7 +45,7 @@ struct TransactionView: View {
 struct TransactionView_Previews: PreviewProvider {
     static var previews: some View {
         TransactionView(
-            transaction: Transaction(id: 1, userId: 1, accountId: 1, amount: 12345, title: "Apple", dateStr: "9 Nov", category: .electronic, type: .outcome, state: .performed)
+            transaction: Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .income, state: .performed)
         )
             .previewLayout(.sizeThatFits)
     }
