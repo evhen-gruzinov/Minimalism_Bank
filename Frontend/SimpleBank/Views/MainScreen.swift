@@ -46,7 +46,7 @@ struct MainScreen: View {
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         MainScreen(
-            transactions: [Transaction(id: 1, userId: 1, accountId: 1, amount: 12345, title: "Apple", dateStr: "9 Nov", category: .electronic, type: .outcome, state: .performed)]
+            transactions: [Transaction(id: 1, userId: 1, accountId: 1, amount: 12345, title: "Apple", dateStr: "2022-07-23", category: .electronic, type: .outcome, state: .performed)]
         )
     }
 }

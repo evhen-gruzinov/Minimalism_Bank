@@ -9,20 +9,35 @@ import SwiftUI
 
 struct TransactionView: View {
     var transaction: Transaction
+    var amountColor: Color {
+        if transaction.type == .income {
+            return Color.green
+        } else {
+            return Color.black
+        }
+    }
     
     var body: some View {
         HStack {
-            VStack(alignment: .leading, spacing: 5.0) {
-                Text(transaction.title)
-                    .fontWeight(.bold)
-                    .font(.title2)
-                Text((transaction.category?.rawValue)?.capitalized ?? "Unknow")
+            VStack(alignment: .leading) {
+                
+                HStack {
+                    Text(transaction.title)
+                        //.fontWeight(.bold)
+                        .font(.headline)
+                    Text((transaction.category?.rawValue)?.capitalized ?? "Unknow")
+                        .font(.caption)
+                        .italic()
+                        .foregroundColor(Color.gray)
+                }
                 Text(transaction.dateStr)
+                    .font(.caption)
             }
             Spacer()
-            Text(Formating().moneyFormating(moneyValue: transaction.amount))
-                .font(.title2)
+            Text((transaction.type == .income ? "+ " : "") + Formating().moneyFormating(moneyValue: transaction.amount))
+                .font(.title3)
                 .fontWeight(.bold)
+                .foregroundColor(amountColor)
         }
     }
 }
