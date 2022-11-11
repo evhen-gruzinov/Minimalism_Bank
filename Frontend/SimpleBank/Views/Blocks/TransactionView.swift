@@ -10,24 +10,17 @@ import SwiftUI
 struct TransactionView: View {
     var transaction: Transaction
     var amountColor: Color {
-        if transaction.type == .income {
-            return Color.green
-        } else {
-            return Color.black
-        }
+        if transaction.type == .income { return Color.green } else { return Color.black }
     }
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                
                 HStack {
                     Text(transaction.title)
-                        //.fontWeight(.bold)
                         .font(.headline)
                     Text((transaction.category?.rawValue)?.capitalized ?? "Unknow")
                         .font(.caption)
-                        .italic()
                         .foregroundColor(Color.gray)
                 }
                 Text(transaction.dateStr)
@@ -39,13 +32,14 @@ struct TransactionView: View {
                 .fontWeight(.bold)
                 .foregroundColor(amountColor)
         }
+        .foregroundColor(.black)
     }
 }
 
 struct TransactionView_Previews: PreviewProvider {
     static var previews: some View {
         TransactionView(
-            transaction: Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .income, state: .performed)
+            transaction: Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .outcome, state: .performed)
         )
             .previewLayout(.sizeThatFits)
     }

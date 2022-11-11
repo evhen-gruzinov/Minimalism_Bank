@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4981B75A291CF5A900AE497F /* SimpleBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4981B759291CF5A900AE497F /* SimpleBankTests.swift */; };
+		49A11D4E291E36F500A7307E /* TransactionsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */; };
+		49A11D52291E3EF300A7307E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D51291E3EF300A7307E /* Color.swift */; };
 		49B3C175291AC11500426145 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C174291AC11500426145 /* Account.swift */; };
 		49B3C177291B1AF800426145 /* Formating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C176291B1AF800426145 /* Formating.swift */; };
 		49D36F69291A4C80002CEF2F /* SimpleBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F68291A4C80002CEF2F /* SimpleBankApp.swift */; };
@@ -16,7 +18,7 @@
 		49D36F70291A4C83002CEF2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */; };
 		49D36F7C291A4EE4002CEF2F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 49D36F7B291A4EE4002CEF2F /* Alamofire */; };
 		49D36F80291A517D002CEF2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F7F291A517D002CEF2F /* Double.swift */; };
-		49D36F83291A5AEB002CEF2F /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F82291A5AEB002CEF2F /* BalanceView.swift */; };
+		49D36F83291A5AEB002CEF2F /* BalanceBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F82291A5AEB002CEF2F /* BalanceBlockView.swift */; };
 		49FA1175291BC1C50043E560 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1174291BC1C50043E560 /* Transaction.swift */; };
 		49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1176291BF41C0043E560 /* TransactionView.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		4981B757291CF5A900AE497F /* SimpleBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981B759291CF5A900AE497F /* SimpleBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBankTests.swift; sourceTree = "<group>"; };
+		49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsBlockView.swift; sourceTree = "<group>"; };
+		49A11D51291E3EF300A7307E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		49B3C174291AC11500426145 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		49B3C176291B1AF800426145 /* Formating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formating.swift; sourceTree = "<group>"; };
 		49D36F65291A4C80002CEF2F /* SimpleBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +46,7 @@
 		49D36F6C291A4C83002CEF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49D36F7F291A517D002CEF2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
-		49D36F82291A5AEB002CEF2F /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		49D36F82291A5AEB002CEF2F /* BalanceBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceBlockView.swift; sourceTree = "<group>"; };
 		49FA1174291BC1C50043E560 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		49FA1176291BF41C0043E560 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				49D36F7F291A517D002CEF2F /* Double.swift */,
+				49A11D51291E3EF300A7307E /* Color.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -143,8 +148,9 @@
 		49D36F81291A5AAB002CEF2F /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
-				49D36F82291A5AEB002CEF2F /* BalanceView.swift */,
+				49D36F82291A5AEB002CEF2F /* BalanceBlockView.swift */,
 				49FA1176291BF41C0043E560 /* TransactionView.swift */,
+				49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */,
 			);
 			path = Blocks;
 			sourceTree = "<group>";
@@ -263,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A11D4E291E36F500A7307E /* TransactionsBlockView.swift in Sources */,
 				49D36F6B291A4C80002CEF2F /* MainScreen.swift in Sources */,
-				49D36F83291A5AEB002CEF2F /* BalanceView.swift in Sources */,
+				49D36F83291A5AEB002CEF2F /* BalanceBlockView.swift in Sources */,
+				49A11D52291E3EF300A7307E /* Color.swift in Sources */,
 				49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */,
 				49FA1175291BC1C50043E560 /* Transaction.swift in Sources */,
 				49D36F80291A517D002CEF2F /* Double.swift in Sources */,

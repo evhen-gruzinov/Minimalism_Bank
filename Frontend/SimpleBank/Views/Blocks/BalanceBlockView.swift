@@ -1,5 +1,5 @@
 //
-//  BalanceView.swift
+//  BalanceBlockView.swift
 //  SimpleBank
 //
 //  Created by Evhen Gruzinov on 08.11.2022.
@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct BalanceView: View {
+struct BalanceBlockView: View {
     var accountBalance: Int?
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         HStack {
@@ -23,22 +24,27 @@ struct BalanceView: View {
             Button("Transactions") {
 
             }
-            .foregroundColor(Color.white)
+            .foregroundColor(colorScheme == .dark ? Color.lightDark : Color.white)
             .font(Font.headline.weight(.bold))
             .padding(10)
-            .background(Color.black)
+            .background(colorScheme == .light ? Color.lightDark : Color.white)
             .cornerRadius(15)
         }
         .padding()
-        .background(Color.white)
+        .background(colorScheme == .dark ? Color.lightDark : Color.white)
         .cornerRadius(15)
     }
 }
 
-struct BalanceView_Previews: PreviewProvider {
+struct BalanceBlockView_Previews: PreviewProvider {
     static var previews: some View {
-        BalanceView(
-            accountBalance: 567855
-        )
+        Group {
+            BalanceBlockView(
+                accountBalance: 567855
+            ).environment(\.colorScheme, .light).previewLayout(.sizeThatFits)
+            BalanceBlockView(
+                accountBalance: 567855
+            ).environment(\.colorScheme, .dark).previewLayout(.sizeThatFits)
+        }
     }
 }
