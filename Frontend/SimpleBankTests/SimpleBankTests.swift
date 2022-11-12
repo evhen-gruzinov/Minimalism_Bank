@@ -10,6 +10,8 @@ import XCTest
 
 final class SimpleBankTests: XCTestCase {
     let expectationNetwork = XCTestExpectation(description: "Getting data from server.")
+    var userToken: String?
+    
     var testAccountBalance: Int?
     var testTransaction: Transaction?
     
@@ -18,6 +20,7 @@ final class SimpleBankTests: XCTestCase {
     
     override func setUpWithError() throws {
         try super.setUpWithError()
+        userToken = "PRv7xXESmpRdr8"
         testAccountBalance = 567855
         testTransaction = Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .income, state: .performed)
     }
@@ -25,24 +28,19 @@ final class SimpleBankTests: XCTestCase {
     override func tearDownWithError() throws {
         accountBalance = nil
         transaction = nil
+        userToken = nil
         try super.tearDownWithError()
     }
 
-    func testGetAccountBalanceFromServer() throws {
-        Account().getBalance { balance in
-            self.accountBalance = balance
+    func testGetAccountDataFromServer() throws {
+        Account().getData(userToken: userToken!, needBalance: true, needTransactions: true, transactionsCount: 1) { data in
+            self.accountBalance = data.balance
+            self.transaction = data.transactions![0]
             self.expectationNetwork.fulfill()
         }
         wait(for: [self.expectationNetwork], timeout: 10.0)
+        
         XCTAssertEqual(self.testAccountBalance, self.accountBalance)
-    }
-    func testGetAccounTransactionFromServer() throws {
-        Account().getTransactions(count: 1, completion: { transactions in
-            self.transaction = transactions[0]
-            self.expectationNetwork.fulfill()
-        })
-        wait(for: [self.expectationNetwork], timeout: 10.0)
         XCTAssertEqual(self.testTransaction, self.transaction)
     }
-
 }

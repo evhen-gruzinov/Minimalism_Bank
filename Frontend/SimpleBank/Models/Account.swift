@@ -8,48 +8,32 @@
 import Foundation
 import Alamofire
 
-class Account: ObservableObject {
-    let userToken = "PRv7xXESmpRdr8"
-}
-
-struct Balance: Codable {
-    let accountBalance: Int
+struct Account: Codable {
+    var balance: Int?
+    var transactions: [Transaction]?
     
     private enum CodingKeys: String, CodingKey {
-        case accountBalance = "balance"
+        case balance = "balance"
+        case transactions = "transactions"
     }
 }
 
 extension Account {
-    func getBalance(completion: @escaping (Int) -> Void) {
-        let parameters: [String: Any] = [
-            "token": userToken
-        ]
-                
-        AF.request("https://jfxfba.deta.dev/getbalance",
-                   method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseDecodable(of: Balance.self) { response in
-            switch response.result {
-            case .success(let value):
-                completion(value.accountBalance)
-            case let .failure(error):
-                print(error)
-            }
-        }
-    }
-    
-    func getTransactions(count: Int, completion: @escaping (Array<Transaction>) -> Void) {
+    func getData(userToken: String, needBalance: Bool, needTransactions: Bool, transactionsCount: Int, completion: @escaping(Account)  -> Void) {
+        
         let parameters: [String: Any] = [
             "token": userToken,
-            "count": count
+            "need_balance": needBalance,
+            "need_transactions": needTransactions,
+            "transactions_count": transactionsCount
         ]
-                
-        AF.request("https://jfxfba.deta.dev/gettransactions",
-                   method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseDecodable(of: [Transaction].self) { response in
+        
+        AF.request("https://jfxfba.deta.dev/getBalanceInfo", method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseDecodable(of: Account.self) { response in
             switch response.result {
             case .success(let value):
                 completion(value)
             case let .failure(error):
-                print(error)
+                debugPrint(error)
             }
         }
     }
