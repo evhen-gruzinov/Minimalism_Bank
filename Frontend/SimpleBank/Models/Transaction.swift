@@ -17,8 +17,6 @@ struct Transaction: Codable, Identifiable, Equatable {
     let category: TransactionCategory?
     let type: TransactionType?
     let state: TransactionState?
-    
-
     private enum CodingKeys: String, CodingKey {
         case id
         case userId = "user_id"
@@ -43,7 +41,6 @@ enum TransactionCategory: String, Codable {
     case beauty = "beauty"
     case health = "health"
     case auto = "auto"
-    
     case salary = "salary"
     case transfer = "transfer"
     case unknown = "unknown"

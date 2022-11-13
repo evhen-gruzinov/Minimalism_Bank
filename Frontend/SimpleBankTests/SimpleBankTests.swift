@@ -27,7 +27,6 @@ final class SimpleBankTests: XCTestCase {
         testAccountBalance = 567855
         testTransaction = Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .income, state: .performed)
     }
-
     override func tearDownWithError() throws {
         testUserId = nil
         accountBalance = nil
@@ -35,7 +34,6 @@ final class SimpleBankTests: XCTestCase {
         userToken = nil
         try super.tearDownWithError()
     }
-    
     func testCheckAccountToken() throws {
         Account().checkToken(userToken: userToken!) { userId in
             if let userId = userId {
@@ -46,7 +44,6 @@ final class SimpleBankTests: XCTestCase {
         wait(for: [self.expectationNetwork], timeout: 10.0)
         XCTAssertEqual(self.testUserId, self.userId)
     }
-
     func testGetAccountDataFromServer() throws {
         Account().getData(userToken: userToken!, needBalance: true, needTransactions: true, transactionsCount: 1) { data in
             self.userId = data.userId
@@ -55,7 +52,6 @@ final class SimpleBankTests: XCTestCase {
             self.expectationNetwork.fulfill()
         }
         wait(for: [self.expectationNetwork], timeout: 10.0)
-        
         XCTAssertEqual(self.testUserId, self.userId)
         XCTAssertEqual(self.testAccountBalance, self.accountBalance)
         XCTAssertEqual(self.testTransaction, self.transaction)
