@@ -15,6 +15,9 @@ mydb = mysql.connector.connect(
 
 cursor = mydb.cursor(buffered=True)
 
+class TokenOnly(BaseModel):
+    token: str
+
 class BalanceInfo(BaseModel):
     token: str
     need_balance: bool
@@ -25,6 +28,17 @@ class BalanceInfo(BaseModel):
 async def test():
     return {"message": "Test answer"}
 
+
+@app.post("/checkToken")
+async def check_token(inputdata: TokenOnly):
+    token = inputdata.token
+    cursor.execute('SELECT * FROM user_tokens WHERE token = %s ', (token,))
+    row = cursor.fetchone()
+
+    if row is None:
+        return {"has_error": 1, "error_description": "Token is wrong"}
+    else:
+        return {"user_id": row[1]}
 
 @app.post("/getBalanceInfo")
 async def get_balance_info(inputdata: BalanceInfo):
@@ -41,6 +55,7 @@ async def get_balance_info(inputdata: BalanceInfo):
     if row is None:
         return {"has_error": 1, "error_description": "Token is wrong"}
     user_id = row[1]
+    return_data["user_id"] = user_id
 
     cursor.execute('SELECT * FROM banking_accounts WHERE user_id = %s', (user_id,))
     balance_row = cursor.fetchone()
