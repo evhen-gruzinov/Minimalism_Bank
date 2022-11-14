@@ -12,6 +12,10 @@ struct TransactionView: View {
     var amountColor: Color {
         if transaction.type == .income { return Color.green } else { return Color.black }
     }
+    var transactionDate: String {
+        let date = Formating().stringToDateFormat(from: transaction.dateStr)
+        if let date = date { return date } else { return "" }
+    }
     
     var body: some View {
         HStack {
@@ -23,11 +27,11 @@ struct TransactionView: View {
                         .font(.caption)
                         .foregroundColor(Color.gray)
                 }
-                Text(transaction.dateStr)
+                Text(transactionDate)
                     .font(.caption)
             }
             Spacer()
-            Text((transaction.type == .income ? "+ " : "") + Formating().moneyFormating(moneyValue: transaction.amount))
+            Text((transaction.type == .income ? "+ " : "") + Formating().intToMoneyFormat(from: transaction.amount))
                 .font(.title3)
                 .fontWeight(.bold)
                 .foregroundColor(amountColor)

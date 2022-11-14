@@ -13,7 +13,7 @@ mydb = mysql.connector.connect(
   database=dblogins.database
 )
 
-cursor = mydb.cursor(buffered=True)
+cursor = mydb.cursor()
 
 class TokenOnly(BaseModel):
     token: str
@@ -85,7 +85,7 @@ async def get_balance_info(inputdata: BalanceInfo):
                 "amount": row[4],
                 "category": row[5],
                 "title": row[6],
-                "date": row[7].strftime("%Y-%m-%d"),
+                "date": row[7].strftime("%Y-%m-%d %H:%M:%S"),
                 "state": row[8]
             })
 

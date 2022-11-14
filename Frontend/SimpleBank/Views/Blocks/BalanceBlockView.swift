@@ -15,7 +15,7 @@ struct BalanceBlockView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Balance")
-                Text(accountBalance != nil ? Formating().moneyFormating(moneyValue: accountBalance!) : "Loading...")
+                Text(accountBalance != nil ? Formating().intToMoneyFormat(from: accountBalance!) : "Loading...")
                     .font(.title)
                     .fontWeight(.bold)
             }
