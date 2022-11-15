@@ -1,5 +1,5 @@
 //
-//  Formating.swift
+//  Formatting.swift
 //  SimpleBank
 //
 //  Created by Evhen Gruzinov on 09.11.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Formating {
+class Formatting {
     func intToMoneyFormat(from moneyValue: Int) -> String {
         let moneyValueDouble: Double = Double(moneyValue) / 100
         
@@ -16,8 +16,8 @@ class Formating {
         currencyFormatter.numberStyle = .currency
         currencyFormatter.locale = Locale(identifier: "en-US")
         
-        let formatedString = currencyFormatter.string(from: NSNumber(value: moneyValueDouble))!
-        return formatedString
+        let formattedString = currencyFormatter.string(from: NSNumber(value: moneyValueDouble))!
+        return formattedString
     }
     
     func stringToDateFormat(from date:String) -> String? {
