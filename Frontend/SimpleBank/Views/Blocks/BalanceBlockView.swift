@@ -15,9 +15,13 @@ struct BalanceBlockView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Balance")
-                Text(accountBalance != nil ? Formating().intToMoneyFormat(from: accountBalance!) : "Loading...")
-                    .font(.title)
-                    .fontWeight(.bold)
+                if let accountBalance = accountBalance {
+                    Text(Formating().intToMoneyFormat(from: accountBalance))
+                        .font(.title)
+                        .fontWeight(.bold)
+                } else {
+                    ProgressView()
+                }
             }
             Spacer()
             

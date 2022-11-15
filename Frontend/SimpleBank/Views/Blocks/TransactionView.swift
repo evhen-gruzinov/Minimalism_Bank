@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct TransactionView: View {
+    @Environment(\.colorScheme) var colorScheme
     var transaction: Transaction
     var amountColor: Color {
-        if transaction.type == .income { return Color.green } else { return Color.black }
+        if transaction.type == .income { return Color.green }
+        else {
+            if colorScheme == .light { return Color.black } else { return Color.white }
+        }
     }
     var transactionDate: String {
         let date = Formating().stringToDateFormat(from: transaction.dateStr)
@@ -36,14 +40,13 @@ struct TransactionView: View {
                 .fontWeight(.bold)
                 .foregroundColor(amountColor)
         }
-        .foregroundColor(.black)
     }
 }
 
 struct TransactionView_Previews: PreviewProvider {
     static var previews: some View {
         TransactionView(
-            transaction: Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .outcome, state: .performed)
+            transaction: Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23 00:00:00", category: .transfer, type: .outcome, state: .performed)
         )
             .previewLayout(.sizeThatFits)
     }

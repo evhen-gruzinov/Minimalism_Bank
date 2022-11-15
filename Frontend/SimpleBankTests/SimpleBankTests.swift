@@ -25,7 +25,7 @@ final class SimpleBankTests: XCTestCase {
         userToken = "PRv7xXESmpRdr8"
         testUserId = 1
         testAccountBalance = 567855
-        testTransaction = Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .income, state: .performed)
+        testTransaction = Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23 00:00:00", category: .transfer, type: .income, state: .performed)
     }
 
     override func tearDownWithError() throws {

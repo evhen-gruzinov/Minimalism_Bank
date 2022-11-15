@@ -14,7 +14,7 @@ struct MainScreen: View {
     var body: some View {
         ZStack {
             if colorScheme == .dark {
-                Color.lightDark.ignoresSafeArea()
+                Color.black.ignoresSafeArea()
             } else {
                 Color(red: 0.95, green: 0.95, blue: 0.95).ignoresSafeArea()
             }
@@ -22,23 +22,16 @@ struct MainScreen: View {
                 BalanceBlockView(accountBalance: accountData?.balance)
                 TransactionsBlockView(transactions: accountData?.transactions)
                 Spacer()
-            }.padding()
+            }
+            .padding()
         }
     }
 }
 
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            MainScreen(
-                accountData: Account(balance: 567855, transactions: [Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .outcome, state: .performed)])
-            )
-                .environment(\.colorScheme, .light)
-            
-            MainScreen(
-                accountData: Account(balance: 567855, transactions: [Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23", category: .transfer, type: .outcome, state: .performed)])
-            )
-                .environment(\.colorScheme, .dark)
-        }
+        MainScreen(
+            accountData: Account(balance: 567855, transactions: [Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23 00:00:00", category: .transfer, type: .outcome, state: .performed)])
+        )
     }
 }
