@@ -16,11 +16,12 @@
 		49D36F6B291A4C80002CEF2F /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F6A291A4C80002CEF2F /* MainScreen.swift */; };
 		49D36F6D291A4C83002CEF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D36F6C291A4C83002CEF2F /* Assets.xcassets */; };
 		49D36F70291A4C83002CEF2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */; };
-		49D36F7C291A4EE4002CEF2F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 49D36F7B291A4EE4002CEF2F /* Alamofire */; };
 		49D36F80291A517D002CEF2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F7F291A517D002CEF2F /* Double.swift */; };
 		49D36F83291A5AEB002CEF2F /* BalanceBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F82291A5AEB002CEF2F /* BalanceBlockView.swift */; };
 		49FA1175291BC1C50043E560 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1174291BC1C50043E560 /* Transaction.swift */; };
 		49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1176291BF41C0043E560 /* TransactionView.swift */; };
+		4A7B9074D9321E5842A88043 /* Pods_SimpleBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344815B77E19CF777E7B6D1C /* Pods_SimpleBank.framework */; };
+		EE95BFE16691265745546DF2 /* Pods_SimpleBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6E736484B69F9F0E06A57 /* Pods_SimpleBankTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		344815B77E19CF777E7B6D1C /* Pods_SimpleBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4981B757291CF5A900AE497F /* SimpleBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4981B759291CF5A900AE497F /* SimpleBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBankTests.swift; sourceTree = "<group>"; };
 		49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsBlockView.swift; sourceTree = "<group>"; };
@@ -49,6 +52,10 @@
 		49D36F82291A5AEB002CEF2F /* BalanceBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceBlockView.swift; sourceTree = "<group>"; };
 		49FA1174291BC1C50043E560 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		49FA1176291BF41C0043E560 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		5E43F251335953BC7C5B3CE6 /* Pods-SimpleBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBank.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBank/Pods-SimpleBank.debug.xcconfig"; sourceTree = "<group>"; };
+		6AF6E736484B69F9F0E06A57 /* Pods_SimpleBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD21AE6E649335E1168E746 /* Pods-SimpleBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBank.release.xcconfig"; path = "Target Support Files/Pods-SimpleBank/Pods-SimpleBank.release.xcconfig"; sourceTree = "<group>"; };
+		AA0B07C347150CACBC0626C9 /* Pods-SimpleBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE95BFE16691265745546DF2 /* Pods_SimpleBankTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,13 +71,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49D36F7C291A4EE4002CEF2F /* Alamofire in Frameworks */,
+				4A7B9074D9321E5842A88043 /* Pods_SimpleBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02EC4F16A1806C033A36C40F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				344815B77E19CF777E7B6D1C /* Pods_SimpleBank.framework */,
+				6AF6E736484B69F9F0E06A57 /* Pods_SimpleBankTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E3E069F674F6B797E936F64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E43F251335953BC7C5B3CE6 /* Pods-SimpleBank.debug.xcconfig */,
+				9FD21AE6E649335E1168E746 /* Pods-SimpleBank.release.xcconfig */,
+				3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */,
+				AA0B07C347150CACBC0626C9 /* Pods-SimpleBankTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4981B758291CF5A900AE497F /* SimpleBankTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +123,8 @@
 				49D36F67291A4C80002CEF2F /* SimpleBank */,
 				4981B758291CF5A900AE497F /* SimpleBankTests */,
 				49D36F66291A4C80002CEF2F /* Products */,
+				3E3E069F674F6B797E936F64 /* Pods */,
+				02EC4F16A1806C033A36C40F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4981B75F291CF5A900AE497F /* Build configuration list for PBXNativeTarget "SimpleBankTests" */;
 			buildPhases = (
+				DBF9D08197123B0C59154D5B /* [CP] Check Pods Manifest.lock */,
 				4981B753291CF5A900AE497F /* Sources */,
 				4981B754291CF5A900AE497F /* Frameworks */,
 				4981B755291CF5A900AE497F /* Resources */,
@@ -180,18 +212,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49D36F73291A4C83002CEF2F /* Build configuration list for PBXNativeTarget "SimpleBank" */;
 			buildPhases = (
+				918CDDC1BFA694528291DB57 /* [CP] Check Pods Manifest.lock */,
 				49D36F61291A4C80002CEF2F /* Sources */,
 				49D36F62291A4C80002CEF2F /* Frameworks */,
 				49D36F63291A4C80002CEF2F /* Resources */,
+				526A418C5C64B2ABCFD64B98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SimpleBank;
-			packageProductDependencies = (
-				49D36F7B291A4EE4002CEF2F /* Alamofire */,
-			);
 			productName = SimpleBank;
 			productReference = 49D36F65291A4C80002CEF2F /* SimpleBank.app */;
 			productType = "com.apple.product-type.application";
@@ -224,9 +255,6 @@
 				Base,
 			);
 			mainGroup = 49D36F5C291A4C80002CEF2F;
-			packageReferences = (
-				49D36F7A291A4EE4002CEF2F /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
 			productRefGroup = 49D36F66291A4C80002CEF2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -255,6 +283,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		526A418C5C64B2ABCFD64B98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleBank/Pods-SimpleBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleBank/Pods-SimpleBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleBank/Pods-SimpleBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		918CDDC1BFA694528291DB57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF9D08197123B0C59154D5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4981B753291CF5A900AE497F /* Sources */ = {
@@ -295,6 +387,7 @@
 /* Begin XCBuildConfiguration section */
 		4981B75D291CF5A900AE497F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +410,7 @@
 		};
 		4981B75E291CF5A900AE497F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0B07C347150CACBC0626C9 /* Pods-SimpleBankTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +547,7 @@
 		};
 		49D36F74291A4C83002CEF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E43F251335953BC7C5B3CE6 /* Pods-SimpleBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -487,6 +582,7 @@
 		};
 		49D36F75291A4C83002CEF2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD21AE6E649335E1168E746 /* Pods-SimpleBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -550,25 +646,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		49D36F7A291A4EE4002CEF2F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		49D36F7B291A4EE4002CEF2F /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 49D36F7A291A4EE4002CEF2F /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49D36F5D291A4C80002CEF2F /* Project object */;
 }
