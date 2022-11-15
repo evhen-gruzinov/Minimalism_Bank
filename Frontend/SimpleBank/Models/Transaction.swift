@@ -34,7 +34,7 @@ struct Transaction: Codable, Identifiable, Equatable {
 
 
 enum TransactionCategory: String, Codable {
-    case shoping = "shoping"
+    case shopping = "shopping"
     case grocery = "grocery"
     case restaurants = "restaurants"
     case electronic = "electronic"
@@ -54,7 +54,7 @@ enum TransactionType: String, Codable {
     case outcome = "outcome"
 }
 enum TransactionState: String, Codable {
-    case inprogress = "inprogress"
+    case in_progress = "in_progress"
     case performed = "performed"
     case rejected = "rejected"
 }

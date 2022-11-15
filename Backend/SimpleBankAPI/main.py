@@ -6,17 +6,19 @@ import dblogins
 app = FastAPI()
 
 mydb = mysql.connector.connect(
-  host=dblogins.host,
-  port=dblogins.port,
-  user=dblogins.user,
-  password=dblogins.password,
-  database=dblogins.database
+    host=dblogins.host,
+    port=dblogins.port,
+    user=dblogins.user,
+    password=dblogins.password,
+    database=dblogins.database
 )
 
 cursor = mydb.cursor()
 
+
 class TokenOnly(BaseModel):
     token: str
+
 
 class BalanceInfo(BaseModel):
     token: str
@@ -24,14 +26,15 @@ class BalanceInfo(BaseModel):
     need_transactions: bool
     transactions_count: int
 
+
 @app.get("/test")
 async def test():
     return {"message": "Test answer"}
 
 
 @app.post("/checkToken")
-async def check_token(inputdata: TokenOnly):
-    token = inputdata.token
+async def check_token(input_data: TokenOnly):
+    token = input_data.token
     cursor.execute('SELECT * FROM user_tokens WHERE token = %s ', (token,))
     row = cursor.fetchone()
 
@@ -40,12 +43,13 @@ async def check_token(inputdata: TokenOnly):
     else:
         return {"user_id": row[1]}
 
+
 @app.post("/getBalanceInfo")
-async def get_balance_info(inputdata: BalanceInfo):
-    token = inputdata.token
-    need_balance = inputdata.need_balance
-    need_transactions = inputdata.need_transactions
-    transactions_count = inputdata.transactions_count
+async def get_balance_info(input_data: BalanceInfo):
+    token = input_data.token
+    need_balance = input_data.need_balance
+    need_transactions = input_data.need_transactions
+    transactions_count = input_data.transactions_count
 
     return_data = {}
 
@@ -61,7 +65,6 @@ async def get_balance_info(inputdata: BalanceInfo):
     balance_row = cursor.fetchone()
     if balance_row is None:
         return {"has_error": 2, "error_description": "User don't have bank account"}
-
 
     if need_balance:
         return_data["balance"] = balance_row[2]

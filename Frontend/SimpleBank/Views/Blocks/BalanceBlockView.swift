@@ -16,7 +16,7 @@ struct BalanceBlockView: View {
             VStack(alignment: .leading) {
                 Text("Balance")
                 if let accountBalance = accountBalance {
-                    Text(Formating().intToMoneyFormat(from: accountBalance))
+                    Text(Formatting().intToMoneyFormat(from: accountBalance))
                         .font(.title)
                         .fontWeight(.bold)
                 } else {

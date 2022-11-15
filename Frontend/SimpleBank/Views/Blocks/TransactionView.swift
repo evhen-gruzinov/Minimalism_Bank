@@ -17,7 +17,7 @@ struct TransactionView: View {
         }
     }
     var transactionDate: String {
-        let date = Formating().stringToDateFormat(from: transaction.dateStr)
+        let date = Formatting().stringToDateFormat(from: transaction.dateStr)
         if let date = date { return date } else { return "" }
     }
     
@@ -27,7 +27,7 @@ struct TransactionView: View {
                 HStack {
                     Text(transaction.title)
                         .font(.headline)
-                    Text((transaction.category?.rawValue)?.capitalized ?? "Unknow")
+                    Text((transaction.category?.rawValue)?.capitalized ?? "Unknown")
                         .font(.caption)
                         .foregroundColor(Color.gray)
                 }
@@ -35,7 +35,7 @@ struct TransactionView: View {
                     .font(.caption)
             }
             Spacer()
-            Text((transaction.type == .income ? "+ " : "") + Formating().intToMoneyFormat(from: transaction.amount))
+            Text((transaction.type == .income ? "+ " : "") + Formatting().intToMoneyFormat(from: transaction.amount))
                 .font(.title3)
                 .fontWeight(.bold)
                 .foregroundColor(amountColor)
