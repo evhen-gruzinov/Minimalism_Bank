@@ -1,0 +1,51 @@
+name: Xcode iOS Tests
+
+on:  
+  push:
+  pull_request:
+    branches:
+      - main
+      
+jobs:
+  ios-tests-macos12-ios16:
+    runs-on: macos-12
+    name: Test iOS (16.1)
+    steps:
+    - uses: actions/checkout@v1
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_14.1.app && /usr/bin/xcodebuild -version
+    - name: CocoaPod Install
+      run: cd Frontend && pod install
+    - name: Build
+      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.1' | xcpretty && exit ${PIPESTATUS[0]}
+    - name: Tests
+      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.1' test | xcpretty && exit ${PIPESTATUS[0]}
+
+  ios-tests-macos12-ios15:
+    runs-on: macos-12
+    name: Test iOS (15.5)
+    steps:
+    - uses: actions/checkout@v1
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_13.4.1.app && /usr/bin/xcodebuild -version
+    - name: CocoaPod Install
+      run: cd Frontend && pod install
+    - name: Build
+      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.5' | xcpretty && exit ${PIPESTATUS[0]}
+    - name: Tests
+      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.5' test | xcpretty && exit ${PIPESTATUS[0]}
+
+
+  ios-tests-macos11-ios14:
+    runs-on: macos-11
+    name: Test iOS (14.5)
+    steps:
+    - uses: actions/checkout@v1
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_12.5.1.app && /usr/bin/xcodebuild -version
+    - name: CocoaPod Install
+      run: cd Frontend && pod install
+    - name: Build
+      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' | xcpretty && exit ${PIPESTATUS[0]}
+    - name: Tests
+      run: xcodebuild test -scheme SimpleBank -workspace Frontend/SimpleBank.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' test | xcpretty && exit ${PIPESTATUS[0]}

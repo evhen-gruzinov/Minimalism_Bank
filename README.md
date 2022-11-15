@@ -9,7 +9,7 @@ Bank for those who value their time and like minimalism in everything. Manage yo
 ## Technical Requirements
 
 - **Min. iOS version:** 14.0
-- **Client:** Swift, [Alamofire](https://github.com/Alamofire/Alamofire)
+- **Client:** Swift, CocoaPods, [Alamofire](https://github.com/Alamofire/Alamofire)
 - **Server:** Python 3 + FastApi + MySQL
 - **License:** [MIT](License.md)
 
@@ -24,8 +24,6 @@ Bank for those who value their time and like minimalism in everything. Manage yo
   - Recieve money
 
   - Payments
-
-  - History of payments
 
 - Registration
 - Log-in
