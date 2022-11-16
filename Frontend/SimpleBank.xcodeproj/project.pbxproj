@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28AF098815B7C5D634D2ABAB /* SimpleBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0FBD90F283EAE56A88E9 /* SimpleBankTests.swift */; };
+		499A5C7F29250EB20092550C /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A5C7E29250EB20092550C /* PullToRefresh.swift */; };
 		49A11D4E291E36F500A7307E /* TransactionsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */; };
 		49A11D52291E3EF300A7307E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D51291E3EF300A7307E /* Color.swift */; };
 		49B3C175291AC11500426145 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C174291AC11500426145 /* Account.swift */; };
@@ -39,6 +40,7 @@
 		344815B77E19CF777E7B6D1C /* Pods_SimpleBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4981B757291CF5A900AE497F /* SimpleBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		499A5C7E29250EB20092550C /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 		49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsBlockView.swift; sourceTree = "<group>"; };
 		49A11D51291E3EF300A7307E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		49B3C174291AC11500426145 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			path = SimpleBankTests;
 			sourceTree = "<group>";
 		};
+		499A5C7D29250E9B0092550C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				499A5C7E29250EB20092550C /* PullToRefresh.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		49B3C173291AC0E000426145 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +170,7 @@
 		49D36F7D291A4F53002CEF2F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				499A5C7D29250E9B0092550C /* Helpers */,
 				49D36F81291A5AAB002CEF2F /* Blocks */,
 				49D36F6A291A4C80002CEF2F /* MainScreen.swift */,
 			);
@@ -362,6 +373,7 @@
 				49A11D4E291E36F500A7307E /* TransactionsBlockView.swift in Sources */,
 				49D36F6B291A4C80002CEF2F /* MainScreen.swift in Sources */,
 				49D36F83291A5AEB002CEF2F /* BalanceBlockView.swift in Sources */,
+				499A5C7F29250EB20092550C /* PullToRefresh.swift in Sources */,
 				49A11D52291E3EF300A7307E /* Color.swift in Sources */,
 				49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */,
 				49FA1175291BC1C50043E560 /* Transaction.swift in Sources */,
@@ -560,8 +572,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -595,8 +607,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
