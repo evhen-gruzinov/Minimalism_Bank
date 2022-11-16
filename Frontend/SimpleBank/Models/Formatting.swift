@@ -36,6 +36,10 @@ class Formatting {
         let dateYear = calendar.component(.year, from: date)
         
         let returnDateFormatter = DateFormatter()
+
+        #if DEBUG
+        returnDateFormatter.locale = Locale(identifier: "en-US")
+        #endif
         
         if nowYear == dateYear {
             returnDateFormatter.dateFormat = "d MMM"
