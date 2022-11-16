@@ -8,6 +8,7 @@ target 'SimpleBank' do
   # Pods for SimpleBank
 
   pod 'Alamofire'
+  pod 'Introspect'
 
   target 'SimpleBankTests' do
     inherit! :search_paths
