@@ -1,7 +1,4 @@
 //
-//  NoInternetView.swift
-//  SimpleBank
-//
 //  Created by Evhen Gruzinov on 17.11.2022.
 //
 

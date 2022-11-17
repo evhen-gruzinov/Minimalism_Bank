@@ -1,11 +1,11 @@
 
 Backend/.idea/vcs.xml
 Backend/.idea/workspace.xml
-Backend/SimpleBankAPI/.deta/prog_info
-Backend/SimpleBankAPI/.deta/state
-Backend/SimpleBankAPI/notes.txt
-Backend/SimpleBankAPI/dblogins.py
-Backend/SimpleBankAPI/test.py
+Backend/MinimalismBankAPI/.deta/prog_info
+Backend/MinimalismBankAPI/.deta/state
+Backend/MinimalismBankAPI/notes.txt
+Backend/MinimalismBankAPI/dblogins.py
+Backend/MinimalismBankAPI/test.py
 
 Frontend/.idea/
 

@@ -19,9 +19,9 @@ jobs:
     - name: CocoaPod Install
       run: cd Frontend && pod install
     - name: Build
-      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.1' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme MinimalismBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.1' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Tests
-      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.1' test | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme MinimalismBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.1' test | xcpretty && exit ${PIPESTATUS[0]}
 
   ios-tests-macos12-ios15:
     runs-on: macos-12
@@ -33,9 +33,9 @@ jobs:
     - name: CocoaPod Install
       run: cd Frontend && pod install
     - name: Build
-      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.5' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme MinimalismBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.5' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Tests
-      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.5' test | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme MinimalismBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.5' test | xcpretty && exit ${PIPESTATUS[0]}
 
 
   ios-tests-macos11-ios14:
@@ -48,6 +48,6 @@ jobs:
     - name: CocoaPod Install
       run: cd Frontend && pod install
     - name: Build
-      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme MinimalismBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Tests
-      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' test | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme MinimalismBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' test | xcpretty && exit ${PIPESTATUS[0]}

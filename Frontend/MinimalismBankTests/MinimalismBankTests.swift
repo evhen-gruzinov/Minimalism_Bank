@@ -5,7 +5,7 @@
 import Foundation
 
 import XCTest
-@testable import SimpleBank
+@testable import MinimalismBank
 
 final class NetworkQueriesTests: XCTestCase {
     let expectationNetwork = XCTestExpectation(description: "Getting data from server.")

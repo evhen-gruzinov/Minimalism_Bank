@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "49D36F64291A4C80002CEF2F"
-               BuildableName = "SimpleBank.app"
-               BlueprintName = "SimpleBank"
-               ReferencedContainer = "container:SimpleBank.xcodeproj">
+               BuildableName = "MinimalismBank.app"
+               BlueprintName = "MinimalismBank"
+               ReferencedContainer = "container:MinimalismBank.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4981B756291CF5A900AE497F"
-               BuildableName = "SimpleBankTests.xctest"
-               BlueprintName = "SimpleBankTests"
-               ReferencedContainer = "container:SimpleBank.xcodeproj">
+               BuildableName = "MinimalismBankTests.xctest"
+               BlueprintName = "MinimalismBankTests"
+               ReferencedContainer = "container:MinimalismBank.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,16 +55,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "NO">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49D36F64291A4C80002CEF2F"
-            BuildableName = "SimpleBank.app"
-            BlueprintName = "SimpleBank"
-            ReferencedContainer = "container:SimpleBank.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <LocationScenarioReference
          identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
          referenceType = "1">
@@ -76,15 +66,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49D36F64291A4C80002CEF2F"
-            BuildableName = "SimpleBank.app"
-            BlueprintName = "SimpleBank"
-            ReferencedContainer = "container:SimpleBank.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -1,7 +1,4 @@
 //
-//  TransactionView.swift
-//  SimpleBank
-//
 //  Created by Evhen Gruzinov on 09.11.2022.
 //
 
