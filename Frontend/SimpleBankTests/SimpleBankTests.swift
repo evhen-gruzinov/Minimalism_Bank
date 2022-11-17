@@ -36,7 +36,7 @@ final class NetworkQueriesTests: XCTestCase {
     }
 
     func testCheckAccountToken() throws {
-        Account().checkToken(userToken: userToken!) { userId in
+        NetworkManager().checkAccountToken(userToken: userToken!) { userId in
             if let userId = userId {
                 self.userId = userId
             }
@@ -47,7 +47,7 @@ final class NetworkQueriesTests: XCTestCase {
     }
 
     func testGetAccountDataFromServer() throws {
-        Account().getData(userToken: userToken!, needBalance: true, needTransactions: true, transactionsCount: 1) { data in
+        NetworkManager().getAccountData(userToken: userToken!, needBalance: true, needTransactions: true, transactionsCount: 1) { data in
             self.userId = data.userId
             self.accountBalance = data.balance
             self.transaction = data.transactions![0]

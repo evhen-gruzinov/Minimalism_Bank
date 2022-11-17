@@ -18,18 +18,19 @@ struct MainScreen: View {
             } else {
                 Color(red: 0.95, green: 0.95, blue: 0.95).ignoresSafeArea()
             }
-            ScrollView {
-                PullToRefresh(coordinateSpaceName: "pullToRefresh") {
-                    Account().getData(userToken: "PRv7xXESmpRdr8", needBalance: true, needTransactions: true, transactionsCount: 5) { data in
-                        accountData = data
+            VStack {
+                NoInternetView(disappear: {self.updateData()})
+                ScrollView {
+                    PullToRefresh(coordinateSpaceName: "pullToRefresh") {
+                        updateData()
                     }
+                    BalanceBlockView(accountBalance: accountData?.balance)
+                    TransactionsBlockView(transactions: accountData?.transactions)
+                    Spacer()
                 }
-                BalanceBlockView(accountBalance: accountData?.balance)
-                TransactionsBlockView(transactions: accountData?.transactions)
-                Spacer()
+                    .padding()
+                    .coordinateSpace(name: "pullToRefresh")
             }
-                .padding()
-                .coordinateSpace(name: "pullToRefresh")
         }
     }
 }
@@ -46,6 +47,14 @@ struct MainScreen_Previews: PreviewProvider {
                 accountData: .constant(testAccountData)
             )
             .environment(\.locale, .init(identifier: "uk"))
+        }
+    }
+}
+
+extension MainScreen {
+    func updateData() {
+        NetworkManager().getAccountData(userToken: "PRv7xXESmpRdr8", needBalance: true, needTransactions: true, transactionsCount: 5) { data in
+            accountData = data
         }
     }
 }
