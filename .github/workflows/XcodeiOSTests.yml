@@ -50,4 +50,4 @@ jobs:
     - name: Build
       run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Tests
-      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' test | xcpretty && exit ${PIPESTATUS[0]}s
+      run: xcodebuild -workspace Frontend/SimpleBank.xcworkspace -scheme SimpleBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' test | xcpretty && exit ${PIPESTATUS[0]}
