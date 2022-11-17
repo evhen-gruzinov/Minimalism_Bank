@@ -14,8 +14,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "49D36F64291A4C80002CEF2F"
-               BuildableName = "SimpleBank.app"
-               BlueprintName = "SimpleBank"
+               BuildableName = "MinimalismBank.app"
+               BlueprintName = "MinimalismBank"
                ReferencedContainer = "container:SimpleBank.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4981B756291CF5A900AE497F"
-               BuildableName = "SimpleBankTests.xctest"
-               BlueprintName = "SimpleBankTests"
-               ReferencedContainer = "container:SimpleBank.xcodeproj">
+               BuildableName = "MinimalismBankTests.xctest"
+               BlueprintName = "MinimalismBankTests"
+               ReferencedContainer = "container:MinimalismBank.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -60,8 +60,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "49D36F64291A4C80002CEF2F"
-            BuildableName = "SimpleBank.app"
-            BlueprintName = "SimpleBank"
+            BuildableName = "MinimalismBank.app"
+            BlueprintName = "MinimalismBank"
             ReferencedContainer = "container:SimpleBank.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "49D36F64291A4C80002CEF2F"
-            BuildableName = "SimpleBank.app"
-            BlueprintName = "SimpleBank"
+            BuildableName = "MinimalismBank.app"
+            BlueprintName = "MinimalismBank"
             ReferencedContainer = "container:SimpleBank.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

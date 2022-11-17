@@ -1,7 +1,4 @@
 //
-//  BalanceBlockView.swift
-//  SimpleBank
-//
 //  Created by Evhen Gruzinov on 08.11.2022.
 //
 

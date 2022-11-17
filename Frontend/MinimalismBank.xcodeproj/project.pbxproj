@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28AF098815B7C5D634D2ABAB /* SimpleBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0FBD90F283EAE56A88E9 /* SimpleBankTests.swift */; };
+		28AF098815B7C5D634D2ABAB /* MinimalismBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0FBD90F283EAE56A88E9 /* MinimalismBankTests.swift */; };
+		48686C9071F7CDDDD82B38B5 /* Pods_MinimalismBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02427892C97D39DC6E2092BD /* Pods_MinimalismBank.framework */; };
 		493D76AC2926C81D00A36F34 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D76AB2926C81D00A36F34 /* NetworkManager.swift */; };
 		493D76AF2926C86E00A36F34 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D76AE2926C86E00A36F34 /* NoInternetView.swift */; };
 		496508762926AE64004E1D5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496508782926AE64004E1D5F /* Localizable.strings */; };
@@ -16,7 +17,7 @@
 		49A11D52291E3EF300A7307E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D51291E3EF300A7307E /* Color.swift */; };
 		49B3C175291AC11500426145 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C174291AC11500426145 /* Account.swift */; };
 		49B3C177291B1AF800426145 /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C176291B1AF800426145 /* Formatting.swift */; };
-		49D36F69291A4C80002CEF2F /* SimpleBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F68291A4C80002CEF2F /* SimpleBankApp.swift */; };
+		49D36F69291A4C80002CEF2F /* MinimalismBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F68291A4C80002CEF2F /* MinimalismBankApp.swift */; };
 		49D36F6B291A4C80002CEF2F /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F6A291A4C80002CEF2F /* MainScreen.swift */; };
 		49D36F6D291A4C83002CEF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D36F6C291A4C83002CEF2F /* Assets.xcassets */; };
 		49D36F70291A4C83002CEF2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */; };
@@ -24,8 +25,7 @@
 		49D36F83291A5AEB002CEF2F /* BalanceBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F82291A5AEB002CEF2F /* BalanceBlockView.swift */; };
 		49FA1175291BC1C50043E560 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1174291BC1C50043E560 /* Transaction.swift */; };
 		49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1176291BF41C0043E560 /* TransactionView.swift */; };
-		4A7B9074D9321E5842A88043 /* Pods_SimpleBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344815B77E19CF777E7B6D1C /* Pods_SimpleBank.framework */; };
-		EE95BFE16691265745546DF2 /* Pods_SimpleBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6E736484B69F9F0E06A57 /* Pods_SimpleBankTests.framework */; };
+		EC203B4A7A4D096CA7F4898E /* Pods_MinimalismBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D3399B70064082C8155901 /* Pods_MinimalismBankTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,21 +39,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		28AF0FBD90F283EAE56A88E9 /* SimpleBankTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBankTests.swift; sourceTree = "<group>"; };
-		344815B77E19CF777E7B6D1C /* Pods_SimpleBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02427892C97D39DC6E2092BD /* Pods_MinimalismBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinimalismBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A5519509F980B341BC202A /* Pods-MinimalismBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalismBankTests.release.xcconfig"; path = "Target Support Files/Pods-MinimalismBankTests/Pods-MinimalismBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		28AF0FBD90F283EAE56A88E9 /* MinimalismBankTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimalismBankTests.swift; sourceTree = "<group>"; };
 		3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		493D76AB2926C81D00A36F34 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		493D76AE2926C86E00A36F34 /* NoInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
 		496508772926AE64004E1D5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		496508792926AE66004E1D5F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4981B757291CF5A900AE497F /* SimpleBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4981B757291CF5A900AE497F /* MinimalismBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalismBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		499A5C7E29250EB20092550C /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 		49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsBlockView.swift; sourceTree = "<group>"; };
 		49A11D51291E3EF300A7307E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		49B3C174291AC11500426145 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		49B3C176291B1AF800426145 /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
-		49D36F65291A4C80002CEF2F /* SimpleBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		49D36F68291A4C80002CEF2F /* SimpleBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBankApp.swift; sourceTree = "<group>"; };
+		49D36F65291A4C80002CEF2F /* MinimalismBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinimalismBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D36F68291A4C80002CEF2F /* MinimalismBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalismBankApp.swift; sourceTree = "<group>"; };
 		49D36F6A291A4C80002CEF2F /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		49D36F6C291A4C83002CEF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -62,9 +63,12 @@
 		49FA1174291BC1C50043E560 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		49FA1176291BF41C0043E560 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		5E43F251335953BC7C5B3CE6 /* Pods-SimpleBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBank.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBank/Pods-SimpleBank.debug.xcconfig"; sourceTree = "<group>"; };
-		6AF6E736484B69F9F0E06A57 /* Pods_SimpleBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94866A851FA82C3AD35D2B18 /* Pods-MinimalismBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalismBankTests.debug.xcconfig"; path = "Target Support Files/Pods-MinimalismBankTests/Pods-MinimalismBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9FD21AE6E649335E1168E746 /* Pods-SimpleBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBank.release.xcconfig"; path = "Target Support Files/Pods-SimpleBank/Pods-SimpleBank.release.xcconfig"; sourceTree = "<group>"; };
 		AA0B07C347150CACBC0626C9 /* Pods-SimpleBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3D3399B70064082C8155901 /* Pods_MinimalismBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinimalismBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C889067BF9A7B83A3BDF8164 /* Pods-MinimalismBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalismBank.release.xcconfig"; path = "Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank.release.xcconfig"; sourceTree = "<group>"; };
+		D7CFB54BC8F04C6A12A2992D /* Pods-MinimalismBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalismBank.debug.xcconfig"; path = "Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE95BFE16691265745546DF2 /* Pods_SimpleBankTests.framework in Frameworks */,
+				EC203B4A7A4D096CA7F4898E /* Pods_MinimalismBankTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A7B9074D9321E5842A88043 /* Pods_SimpleBank.framework in Frameworks */,
+				48686C9071F7CDDDD82B38B5 /* Pods_MinimalismBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +94,8 @@
 		02EC4F16A1806C033A36C40F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				344815B77E19CF777E7B6D1C /* Pods_SimpleBank.framework */,
-				6AF6E736484B69F9F0E06A57 /* Pods_SimpleBankTests.framework */,
+				02427892C97D39DC6E2092BD /* Pods_MinimalismBank.framework */,
+				C3D3399B70064082C8155901 /* Pods_MinimalismBankTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +107,10 @@
 				9FD21AE6E649335E1168E746 /* Pods-SimpleBank.release.xcconfig */,
 				3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */,
 				AA0B07C347150CACBC0626C9 /* Pods-SimpleBankTests.release.xcconfig */,
+				D7CFB54BC8F04C6A12A2992D /* Pods-MinimalismBank.debug.xcconfig */,
+				C889067BF9A7B83A3BDF8164 /* Pods-MinimalismBank.release.xcconfig */,
+				94866A851FA82C3AD35D2B18 /* Pods-MinimalismBankTests.debug.xcconfig */,
+				18A5519509F980B341BC202A /* Pods-MinimalismBankTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -126,12 +134,12 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		4981B758291CF5A900AE497F /* SimpleBankTests */ = {
+		4981B758291CF5A900AE497F /* MinimalismBankTests */ = {
 			isa = PBXGroup;
 			children = (
-				28AF0FBD90F283EAE56A88E9 /* SimpleBankTests.swift */,
+				28AF0FBD90F283EAE56A88E9 /* MinimalismBankTests.swift */,
 			);
-			path = SimpleBankTests;
+			path = MinimalismBankTests;
 			sourceTree = "<group>";
 		};
 		499A5C7D29250E9B0092550C /* Helpers */ = {
@@ -156,8 +164,8 @@
 		49D36F5C291A4C80002CEF2F = {
 			isa = PBXGroup;
 			children = (
-				49D36F67291A4C80002CEF2F /* SimpleBank */,
-				4981B758291CF5A900AE497F /* SimpleBankTests */,
+				49D36F67291A4C80002CEF2F /* MinimalismBank */,
+				4981B758291CF5A900AE497F /* MinimalismBankTests */,
 				49D36F66291A4C80002CEF2F /* Products */,
 				3E3E069F674F6B797E936F64 /* Pods */,
 				02EC4F16A1806C033A36C40F /* Frameworks */,
@@ -167,22 +175,22 @@
 		49D36F66291A4C80002CEF2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49D36F65291A4C80002CEF2F /* SimpleBank.app */,
-				4981B757291CF5A900AE497F /* SimpleBankTests.xctest */,
+				49D36F65291A4C80002CEF2F /* MinimalismBank.app */,
+				4981B757291CF5A900AE497F /* MinimalismBankTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49D36F67291A4C80002CEF2F /* SimpleBank */ = {
+		49D36F67291A4C80002CEF2F /* MinimalismBank */ = {
 			isa = PBXGroup;
 			children = (
-				49D36F68291A4C80002CEF2F /* SimpleBankApp.swift */,
+				49D36F68291A4C80002CEF2F /* MinimalismBankApp.swift */,
 				49D36F7D291A4F53002CEF2F /* Views */,
 				49B3C173291AC0E000426145 /* Models */,
 				49D36F7E291A5168002CEF2F /* Extentions */,
 				496508752926AE4B004E1D5F /* Other */,
 			);
-			path = SimpleBank;
+			path = MinimalismBank;
 			sourceTree = "<group>";
 		};
 		49D36F6E291A4C83002CEF2F /* Preview Content */ = {
@@ -225,9 +233,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4981B756291CF5A900AE497F /* SimpleBankTests */ = {
+		4981B756291CF5A900AE497F /* MinimalismBankTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4981B75F291CF5A900AE497F /* Build configuration list for PBXNativeTarget "SimpleBankTests" */;
+			buildConfigurationList = 4981B75F291CF5A900AE497F /* Build configuration list for PBXNativeTarget "MinimalismBankTests" */;
 			buildPhases = (
 				DBF9D08197123B0C59154D5B /* [CP] Check Pods Manifest.lock */,
 				4981B753291CF5A900AE497F /* Sources */,
@@ -239,14 +247,14 @@
 			dependencies = (
 				4981B75C291CF5A900AE497F /* PBXTargetDependency */,
 			);
-			name = SimpleBankTests;
+			name = MinimalismBankTests;
 			productName = SimpleBankTests;
-			productReference = 4981B757291CF5A900AE497F /* SimpleBankTests.xctest */;
+			productReference = 4981B757291CF5A900AE497F /* MinimalismBankTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		49D36F64291A4C80002CEF2F /* SimpleBank */ = {
+		49D36F64291A4C80002CEF2F /* MinimalismBank */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49D36F73291A4C83002CEF2F /* Build configuration list for PBXNativeTarget "SimpleBank" */;
+			buildConfigurationList = 49D36F73291A4C83002CEF2F /* Build configuration list for PBXNativeTarget "MinimalismBank" */;
 			buildPhases = (
 				918CDDC1BFA694528291DB57 /* [CP] Check Pods Manifest.lock */,
 				49D36F61291A4C80002CEF2F /* Sources */,
@@ -258,9 +266,9 @@
 			);
 			dependencies = (
 			);
-			name = SimpleBank;
+			name = MinimalismBank;
 			productName = SimpleBank;
-			productReference = 49D36F65291A4C80002CEF2F /* SimpleBank.app */;
+			productReference = 49D36F65291A4C80002CEF2F /* MinimalismBank.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -282,7 +290,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 49D36F60291A4C80002CEF2F /* Build configuration list for PBXProject "SimpleBank" */;
+			buildConfigurationList = 49D36F60291A4C80002CEF2F /* Build configuration list for PBXProject "MinimalismBank" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -296,8 +304,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49D36F64291A4C80002CEF2F /* SimpleBank */,
-				4981B756291CF5A900AE497F /* SimpleBankTests */,
+				49D36F64291A4C80002CEF2F /* MinimalismBank */,
+				4981B756291CF5A900AE497F /* MinimalismBankTests */,
 			);
 		};
 /* End PBXProject section */
@@ -329,15 +337,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SimpleBank/Pods-SimpleBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SimpleBank/Pods-SimpleBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleBank/Pods-SimpleBank-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		918CDDC1BFA694528291DB57 /* [CP] Check Pods Manifest.lock */ = {
@@ -355,7 +363,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SimpleBank-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MinimalismBank-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -377,7 +385,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SimpleBankTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MinimalismBankTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -391,7 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AF098815B7C5D634D2ABAB /* SimpleBankTests.swift in Sources */,
+				28AF098815B7C5D634D2ABAB /* MinimalismBankTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +417,7 @@
 				49FA1175291BC1C50043E560 /* Transaction.swift in Sources */,
 				49D36F80291A517D002CEF2F /* Double.swift in Sources */,
 				49B3C175291AC11500426145 /* Account.swift in Sources */,
-				49D36F69291A4C80002CEF2F /* SimpleBankApp.swift in Sources */,
+				49D36F69291A4C80002CEF2F /* MinimalismBankApp.swift in Sources */,
 				493D76AF2926C86E00A36F34 /* NoInternetView.swift in Sources */,
 				49B3C177291B1AF800426145 /* Formatting.swift in Sources */,
 			);
@@ -420,7 +428,7 @@
 /* Begin PBXTargetDependency section */
 		4981B75C291CF5A900AE497F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 49D36F64291A4C80002CEF2F /* SimpleBank */;
+			target = 49D36F64291A4C80002CEF2F /* MinimalismBank */;
 			targetProxy = 4981B75B291CF5A900AE497F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -440,7 +448,7 @@
 /* Begin XCBuildConfiguration section */
 		4981B75D291CF5A900AE497F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */;
+			baseConfigurationReference = 94866A851FA82C3AD35D2B18 /* Pods-MinimalismBankTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -457,13 +465,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBank.app/SimpleBank";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimalismBank.app/MinimalismBank";
 			};
 			name = Debug;
 		};
 		4981B75E291CF5A900AE497F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA0B07C347150CACBC0626C9 /* Pods-SimpleBankTests.release.xcconfig */;
+			baseConfigurationReference = 18A5519509F980B341BC202A /* Pods-MinimalismBankTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -480,7 +488,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleBank.app/SimpleBank";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimalismBank.app/MinimalismBank";
 			};
 			name = Release;
 		};
@@ -602,7 +610,7 @@
 		};
 		49D36F74291A4C83002CEF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E43F251335953BC7C5B3CE6 /* Pods-SimpleBank.debug.xcconfig */;
+			baseConfigurationReference = D7CFB54BC8F04C6A12A2992D /* Pods-MinimalismBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -624,7 +632,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.SimpleBank;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.MinimalismBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -637,7 +645,7 @@
 		};
 		49D36F75291A4C83002CEF2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FD21AE6E649335E1168E746 /* Pods-SimpleBank.release.xcconfig */;
+			baseConfigurationReference = C889067BF9A7B83A3BDF8164 /* Pods-MinimalismBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -659,7 +667,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.SimpleBank;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.MinimalismBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -673,7 +681,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4981B75F291CF5A900AE497F /* Build configuration list for PBXNativeTarget "SimpleBankTests" */ = {
+		4981B75F291CF5A900AE497F /* Build configuration list for PBXNativeTarget "MinimalismBankTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4981B75D291CF5A900AE497F /* Debug */,
@@ -682,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		49D36F60291A4C80002CEF2F /* Build configuration list for PBXProject "SimpleBank" */ = {
+		49D36F60291A4C80002CEF2F /* Build configuration list for PBXProject "MinimalismBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49D36F71291A4C83002CEF2F /* Debug */,
@@ -691,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		49D36F73291A4C83002CEF2F /* Build configuration list for PBXNativeTarget "SimpleBank" */ = {
+		49D36F73291A4C83002CEF2F /* Build configuration list for PBXNativeTarget "MinimalismBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49D36F74291A4C83002CEF2F /* Debug */,

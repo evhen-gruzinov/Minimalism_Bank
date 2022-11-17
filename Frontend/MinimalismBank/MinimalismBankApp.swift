@@ -1,17 +1,12 @@
 //
-//  SimpleBankApp.swift
-//  SimpleBank
-//
 //  Created by Evhen Gruzinov on 08.11.2022.
 //
 
 import SwiftUI
 
 @main
-struct SimpleBankApp: App {
-//    @State var accountData: Account?
+struct MinimalismBankApp: App {
     @State var accountData: Account?
-
 
     var body: some Scene {
         WindowGroup {
