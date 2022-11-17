@@ -20,7 +20,7 @@ struct MainScreen: View {
             }
             ScrollView {
                 PullToRefresh(coordinateSpaceName: "pullToRefresh") {
-                    Account().getData(userToken: "PRv7xXESmpRdr8", needBalance: true, needTransactions: true, transactionsCount: 5) { data in
+                    NetworkManager().getAccountData(userToken: "PRv7xXESmpRdr8", needBalance: true, needTransactions: true, transactionsCount: 5) { data in
                         accountData = data
                     }
                 }

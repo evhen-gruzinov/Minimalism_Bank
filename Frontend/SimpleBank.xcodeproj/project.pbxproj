@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28AF098815B7C5D634D2ABAB /* SimpleBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0FBD90F283EAE56A88E9 /* SimpleBankTests.swift */; };
+		493D76AC2926C81D00A36F34 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D76AB2926C81D00A36F34 /* NetworkManager.swift */; };
 		496508762926AE64004E1D5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496508782926AE64004E1D5F /* Localizable.strings */; };
 		499A5C7F29250EB20092550C /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A5C7E29250EB20092550C /* PullToRefresh.swift */; };
 		49A11D4E291E36F500A7307E /* TransactionsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */; };
@@ -40,6 +41,7 @@
 		28AF0FBD90F283EAE56A88E9 /* SimpleBankTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBankTests.swift; sourceTree = "<group>"; };
 		344815B77E19CF777E7B6D1C /* Pods_SimpleBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		493D76AB2926C81D00A36F34 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		496508772926AE64004E1D5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		496508792926AE66004E1D5F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4981B757291CF5A900AE497F /* SimpleBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 			children = (
 				49B3C174291AC11500426145 /* Account.swift */,
 				49B3C176291B1AF800426145 /* Formatting.swift */,
+				493D76AB2926C81D00A36F34 /* NetworkManager.swift */,
 				49FA1174291BC1C50043E560 /* Transaction.swift */,
 			);
 			path = Models;
@@ -275,6 +278,7 @@
 			knownRegions = (
 				en,
 				uk,
+				Base,
 			);
 			mainGroup = 49D36F5C291A4C80002CEF2F;
 			productRefGroup = 49D36F66291A4C80002CEF2F /* Products */;
@@ -384,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493D76AC2926C81D00A36F34 /* NetworkManager.swift in Sources */,
 				49A11D4E291E36F500A7307E /* TransactionsBlockView.swift in Sources */,
 				49D36F6B291A4C80002CEF2F /* MainScreen.swift in Sources */,
 				49D36F83291A5AEB002CEF2F /* BalanceBlockView.swift in Sources */,
@@ -663,7 +668,7 @@
 				4981B75E291CF5A900AE497F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		49D36F60291A4C80002CEF2F /* Build configuration list for PBXProject "SimpleBank" */ = {
 			isa = XCConfigurationList;
@@ -672,7 +677,7 @@
 				49D36F72291A4C83002CEF2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		49D36F73291A4C83002CEF2F /* Build configuration list for PBXNativeTarget "SimpleBank" */ = {
 			isa = XCConfigurationList;
@@ -681,7 +686,7 @@
 				49D36F75291A4C83002CEF2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
