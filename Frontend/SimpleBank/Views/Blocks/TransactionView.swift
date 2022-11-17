@@ -27,7 +27,10 @@ struct TransactionView: View {
                 HStack {
                     Text(transaction.title)
                         .font(.headline)
-                    Text((transaction.category?.rawValue)?.capitalized ?? "Unknown")
+                    
+                    Text(
+                        NSLocalizedString(transaction.category?.rawValue ?? "unknown", comment: "Transaction category")
+                    )
                         .font(.caption)
                         .foregroundColor(Color.gray)
                 }
