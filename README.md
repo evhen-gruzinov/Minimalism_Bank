@@ -1,4 +1,4 @@
-# Simple Bank
+# Minimalism Bank
 
 Bank for those who value their time and like minimalism in everything. Manage your finances right from your phone, in just a few taps.
 
