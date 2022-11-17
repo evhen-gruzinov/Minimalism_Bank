@@ -9,6 +9,8 @@
 // Main screen and its child's
 "balance" = "Баланс";
 "recentTransactions" = "Нещодавні транзакції";
+"noInternet" = "**Відсутнє підключення до мережі**";
+"noInternetDescription" = "Будь ласка, перевірте підключення до Інтернету та спробуйте ще раз";
 
 
 // Transactions elements
