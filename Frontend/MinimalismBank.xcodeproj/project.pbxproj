@@ -260,7 +260,7 @@
 				49D36F61291A4C80002CEF2F /* Sources */,
 				49D36F62291A4C80002CEF2F /* Frameworks */,
 				49D36F63291A4C80002CEF2F /* Resources */,
-				0045C8685AE80E1FA3550FE8 /* [CP] Embed Pods Frameworks */,
+				4A0E7A3AF2786D1C3D01FD20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,7 +331,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0045C8685AE80E1FA3550FE8 /* [CP] Embed Pods Frameworks */ = {
+		4A0E7A3AF2786D1C3D01FD20 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -616,11 +616,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleBank/Other/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MinimalismBank/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Simple Bank";
+				INFOPLIST_KEY_CFBundleDisplayName = "Minimalism Bank";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -651,11 +651,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleBank/Other/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MinimalismBank/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Simple Bank";
+				INFOPLIST_KEY_CFBundleDisplayName = "Minimalism Bank";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

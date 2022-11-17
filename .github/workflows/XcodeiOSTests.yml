@@ -48,6 +48,6 @@ jobs:
     - name: CocoaPod Install
       run: cd Frontend && pod install
     - name: Build
-      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme SimpleBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme MinimalismBank -configuration Release -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Tests
-      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme SimpleBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' test | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild -workspace Frontend/MinimalismBank.xcworkspace -scheme MinimalismBank -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5' test | xcpretty && exit ${PIPESTATUS[0]}

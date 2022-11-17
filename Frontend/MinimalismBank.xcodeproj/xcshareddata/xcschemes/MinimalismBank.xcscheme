@@ -16,7 +16,7 @@
                BlueprintIdentifier = "49D36F64291A4C80002CEF2F"
                BuildableName = "MinimalismBank.app"
                BlueprintName = "MinimalismBank"
-               ReferencedContainer = "container:SimpleBank.xcodeproj">
+               ReferencedContainer = "container:MinimalismBank.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -55,16 +55,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "NO">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49D36F64291A4C80002CEF2F"
-            BuildableName = "MinimalismBank.app"
-            BlueprintName = "MinimalismBank"
-            ReferencedContainer = "container:SimpleBank.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <LocationScenarioReference
          identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
          referenceType = "1">
@@ -76,15 +66,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "49D36F64291A4C80002CEF2F"
-            BuildableName = "MinimalismBank.app"
-            BlueprintName = "MinimalismBank"
-            ReferencedContainer = "container:SimpleBank.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
