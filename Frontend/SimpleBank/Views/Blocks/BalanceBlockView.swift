@@ -14,7 +14,7 @@ struct BalanceBlockView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text("Balance")
+                Text("balance")
                 if let accountBalance = accountBalance {
                     Text(Formatting().intToMoneyFormat(from: accountBalance))
                         .font(.title)

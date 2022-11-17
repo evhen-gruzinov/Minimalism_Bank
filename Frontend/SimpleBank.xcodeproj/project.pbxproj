@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28AF098815B7C5D634D2ABAB /* SimpleBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0FBD90F283EAE56A88E9 /* SimpleBankTests.swift */; };
+		496508762926AE64004E1D5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496508782926AE64004E1D5F /* Localizable.strings */; };
 		499A5C7F29250EB20092550C /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A5C7E29250EB20092550C /* PullToRefresh.swift */; };
 		49A11D4E291E36F500A7307E /* TransactionsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */; };
 		49A11D52291E3EF300A7307E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D51291E3EF300A7307E /* Color.swift */; };
@@ -39,6 +40,8 @@
 		28AF0FBD90F283EAE56A88E9 /* SimpleBankTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleBankTests.swift; sourceTree = "<group>"; };
 		344815B77E19CF777E7B6D1C /* Pods_SimpleBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		496508772926AE64004E1D5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		496508792926AE66004E1D5F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4981B757291CF5A900AE497F /* SimpleBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		499A5C7E29250EB20092550C /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 		49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsBlockView.swift; sourceTree = "<group>"; };
@@ -100,6 +103,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		496508752926AE4B004E1D5F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F6C291A4C83002CEF2F /* Assets.xcassets */,
+				496508782926AE64004E1D5F /* Localizable.strings */,
+				49D36F6E291A4C83002CEF2F /* Preview Content */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		4981B758291CF5A900AE497F /* SimpleBankTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +166,7 @@
 				49D36F7D291A4F53002CEF2F /* Views */,
 				49B3C173291AC0E000426145 /* Models */,
 				49D36F7E291A5168002CEF2F /* Extentions */,
-				49D36F6C291A4C83002CEF2F /* Assets.xcassets */,
-				49D36F6E291A4C83002CEF2F /* Preview Content */,
+				496508752926AE4B004E1D5F /* Other */,
 			);
 			path = SimpleBank;
 			sourceTree = "<group>";
@@ -226,7 +238,7 @@
 				49D36F61291A4C80002CEF2F /* Sources */,
 				49D36F62291A4C80002CEF2F /* Frameworks */,
 				49D36F63291A4C80002CEF2F /* Resources */,
-				526A418C5C64B2ABCFD64B98 /* [CP] Embed Pods Frameworks */,
+				0045C8685AE80E1FA3550FE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +274,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				uk,
 			);
 			mainGroup = 49D36F5C291A4C80002CEF2F;
 			productRefGroup = 49D36F66291A4C80002CEF2F /* Products */;
@@ -287,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D36F70291A4C83002CEF2F /* Preview Assets.xcassets in Resources */,
+				496508762926AE64004E1D5F /* Localizable.strings in Resources */,
 				49D36F6D291A4C83002CEF2F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +308,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		526A418C5C64B2ABCFD64B98 /* [CP] Embed Pods Frameworks */ = {
+		0045C8685AE80E1FA3550FE8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,6 +408,18 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		496508782926AE64004E1D5F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496508772926AE64004E1D5F /* en */,
+				496508792926AE66004E1D5F /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		4981B75D291CF5A900AE497F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -445,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -505,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -563,7 +591,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleBank/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleBank/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -598,7 +626,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleBank/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleBank/Other/Preview Content\"";
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

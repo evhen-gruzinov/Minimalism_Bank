@@ -17,7 +17,7 @@ struct TransactionsBlockView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Recent transactions:")
+                Text("recentTransactions")
                     .font(.title2)
                     .fontWeight(.bold)
                 Spacer()
