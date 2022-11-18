@@ -6,11 +6,10 @@ import SwiftUI
 
 struct TransactionsBlockView: View {
     @Environment(\.colorScheme) var colorScheme
-    var transactions: [Transaction]?
-    var backgroundColor: Color {
-        if colorScheme == .light { return Color.white } else { return Color.lightDark }
-    }
-    
+    var accountData: Account?
+    var sessionData: Session
+    var backgroundColor: Color { colorScheme == .light ? Color.white : Color.lightDark }
+
     var body: some View {
         VStack {
             HStack {
@@ -21,7 +20,7 @@ struct TransactionsBlockView: View {
             }
             .padding(.top, 25)
             VStack {
-                if let transactions = transactions {
+                if let transactions = accountData?.transactions {
                     if transactions.count > 0 {
                         ForEach(transactions) { transaction in
                             TransactionView(transaction: transaction)
@@ -29,8 +28,21 @@ struct TransactionsBlockView: View {
                                 Divider()
                             }
                         }
+                        if let transactionsCount = accountData?.transactionsCount {
+                            if transactionsCount > 5 {
+                                NavigationLink(destination: AllTransactionsScreen(sessionData: sessionData)) {
+                                    VStack {
+                                        Divider()
+                                        HStack {
+                                            Text("allTransactions").bold()
+                                            Image(systemName: "chevron.forward")
+                                        }
+                                    }
+                                }.foregroundColor(colorScheme == .light ? Color.black : Color.white)
+                            }
+                        }
                     } else {
-                        Text("You don't have transactions yet")
+                        Text("noTransactions")
                     }
                 } else {
                     ProgressView()
@@ -46,7 +58,8 @@ struct TransactionsBlockView: View {
 struct TransactionsBlockView_Previews: PreviewProvider {
     static var previews: some View {
         TransactionsBlockView(
-            transactions: [Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23 00:00:00", category: .transfer, type: .income, state: .performed)]
+                accountData: Account(balance: 567855, transactions: [Transaction(id: 4, userId: 1, accountId: 1, amount: 9900, title: "From: Tim Cook", dateStr: "2022-10-23 00:00:00", category: .transfer, type: .outcome, state: .performed)]),
+                sessionData: Session(token: "PRv7xXESmpRdr8")
         )
     }
 }

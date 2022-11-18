@@ -15,17 +15,14 @@ mydb = mysql.connector.connect(
 
 cursor = mydb.cursor()
 
-
 class TokenOnly(BaseModel):
     token: str
-
 
 class BalanceInfo(BaseModel):
     token: str
     need_balance: bool
     need_transactions: bool
     transactions_count: int
-
 
 @app.get("/test")
 async def test():
@@ -92,6 +89,10 @@ async def get_balance_info(input_data: BalanceInfo):
                 "state": row[8]
             })
 
+        cursor.execute('SELECT COUNT(*) FROM `transactions` WHERE `user_id` = %s ', (user_id,))
+        transactions_count = int(cursor.fetchone()[0])
+
+        return_data["transactions_count"] = transactions_count
         return_data["transactions"] = transactions
 
     return return_data

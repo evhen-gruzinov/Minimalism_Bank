@@ -20,12 +20,10 @@ struct NoInternetView: View {
                     Spacer()
                 }
                 .padding()
-                .onDisappear() {
-                    self.disappear()
-                }
+                .onDisappear { disappear() }
             }
         }
-        .onAppear() {
+        .onAppear {
             Timer.scheduledTimer(withTimeInterval: 5, repeats: true) {(_) in
                 isConnected = NetworkManager().isConnectedToInternet()
             }
