@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28AF0487FFAB1A41A8517779 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF01BCBA82952377C91763 /* Session.swift */; };
 		28AF098815B7C5D634D2ABAB /* MinimalismBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0FBD90F283EAE56A88E9 /* MinimalismBankTests.swift */; };
 		48686C9071F7CDDDD82B38B5 /* Pods_MinimalismBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02427892C97D39DC6E2092BD /* Pods_MinimalismBank.framework */; };
+		49307B8229278E9C00D8BAB4 /* AllTransactionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49307B8129278E9C00D8BAB4 /* AllTransactionsScreen.swift */; };
 		493D76AC2926C81D00A36F34 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D76AB2926C81D00A36F34 /* NetworkManager.swift */; };
 		493D76AF2926C86E00A36F34 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D76AE2926C86E00A36F34 /* NoInternetView.swift */; };
 		496508762926AE64004E1D5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496508782926AE64004E1D5F /* Localizable.strings */; };
@@ -41,8 +43,10 @@
 /* Begin PBXFileReference section */
 		02427892C97D39DC6E2092BD /* Pods_MinimalismBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinimalismBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A5519509F980B341BC202A /* Pods-MinimalismBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalismBankTests.release.xcconfig"; path = "Target Support Files/Pods-MinimalismBankTests/Pods-MinimalismBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		28AF01BCBA82952377C91763 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		28AF0FBD90F283EAE56A88E9 /* MinimalismBankTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimalismBankTests.swift; sourceTree = "<group>"; };
 		3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		49307B8129278E9C00D8BAB4 /* AllTransactionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactionsScreen.swift; sourceTree = "<group>"; };
 		493D76AB2926C81D00A36F34 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		493D76AE2926C86E00A36F34 /* NoInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
 		496508772926AE64004E1D5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				49B3C176291B1AF800426145 /* Formatting.swift */,
 				493D76AB2926C81D00A36F34 /* NetworkManager.swift */,
 				49FA1174291BC1C50043E560 /* Transaction.swift */,
+				28AF01BCBA82952377C91763 /* Session.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				499A5C7D29250E9B0092550C /* Helpers */,
 				49D36F81291A5AAB002CEF2F /* Blocks */,
 				49D36F6A291A4C80002CEF2F /* MainScreen.swift */,
+				49307B8129278E9C00D8BAB4 /* AllTransactionsScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -414,12 +420,14 @@
 				499A5C7F29250EB20092550C /* PullToRefresh.swift in Sources */,
 				49A11D52291E3EF300A7307E /* Color.swift in Sources */,
 				49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */,
+				49307B8229278E9C00D8BAB4 /* AllTransactionsScreen.swift in Sources */,
 				49FA1175291BC1C50043E560 /* Transaction.swift in Sources */,
 				49D36F80291A517D002CEF2F /* Double.swift in Sources */,
 				49B3C175291AC11500426145 /* Account.swift in Sources */,
 				49D36F69291A4C80002CEF2F /* MinimalismBankApp.swift in Sources */,
 				493D76AF2926C86E00A36F34 /* NoInternetView.swift in Sources */,
 				49B3C177291B1AF800426145 /* Formatting.swift in Sources */,
+				28AF0487FFAB1A41A8517779 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +628,8 @@
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Minimalism Bank";
+				INFOPLIST_KEY_CFBundleDisplayName = Minimalism;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -655,7 +664,8 @@
 				DEVELOPMENT_TEAM = G4PV26QJD2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Minimalism Bank";
+				INFOPLIST_KEY_CFBundleDisplayName = Minimalism;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
