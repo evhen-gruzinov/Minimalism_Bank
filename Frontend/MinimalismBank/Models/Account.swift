@@ -12,7 +12,7 @@ struct Account: Codable {
     var userId: Int?
     var balance: Int?
     var transactions: [Transaction]?
-    var transactionsCount: Int = 0
+    var transactionsCount: Int?
     
     private enum CodingKeys: String, CodingKey {
         case userId = "user_id"

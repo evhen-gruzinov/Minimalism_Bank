@@ -18,11 +18,9 @@ struct MainScreen: View {
                     Color(red: 0.95, green: 0.95, blue: 0.95).ignoresSafeArea()
                 }
                 VStack {
-                    NoInternetView(disappear: { updateData() })
                     ScrollView {
-                        PullToRefresh(coordinateSpaceName: "pullToRefresh") {
-                            updateData()
-                        }
+                        PullToRefresh(coordinateSpaceName: "pullToRefresh") { updateData() }
+                        NoInternetView(disappear: { updateData() })
                         BalanceBlockView(accountBalance: accountData?.balance)
                         TransactionsBlockView(accountData: accountData,sessionData: sessionData)
                         Spacer()

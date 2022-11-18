@@ -38,7 +38,7 @@ struct TransactionsBlockView: View {
                                         VStack {
                                             Divider()
                                             HStack {
-                                                Text("All transactions").bold()
+                                                Text("allTransactions").bold()
                                                 Image(systemName: "chevron.forward")
                                             }
                                         }
@@ -47,7 +47,7 @@ struct TransactionsBlockView: View {
                             }
                         }
                     } else {
-                        Text("You don't have transactions yet")
+                        Text("noTransactions")
                     }
                 } else {
                     ProgressView()

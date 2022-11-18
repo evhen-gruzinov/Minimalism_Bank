@@ -11,6 +11,10 @@
 "recentTransactions" = "Recent transactions";
 "noInternet" = "**No network connection**";
 "noInternetDescription" = "Please check your internet connection and try again";
+"pullToRefresh" = "Pull to refresh";
+
+"noTransactions" = "You don't have transactions yet";
+"allTransactions" = "All transactions";
 
 
 // Transactions elements

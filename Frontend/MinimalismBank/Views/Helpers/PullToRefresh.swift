@@ -33,7 +33,7 @@ struct PullToRefresh: View {
                     ProgressView()
                 } else {
                     HStack {
-                        Text("Pull to refresh")
+                        Text("pullToRefresh")
                         Image(systemName: "arrow.clockwise")
                     }
                 }

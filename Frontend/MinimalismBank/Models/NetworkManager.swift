@@ -9,11 +9,9 @@ import Foundation
 import Alamofire
 
 class NetworkManager {
-    func isConnectedToInternet() -> Bool {
-        return NetworkReachabilityManager()?.isReachable ?? false
-    }
-    
-    func checkAccountToken(userToken: String, completion: @escaping(Int?) -> Void) { //,,
+    func isConnectedToInternet() -> Bool {NetworkReachabilityManager()?.isReachable ?? false}
+
+    func checkAccountToken(userToken: String, completion: @escaping(Int?) -> Void) {
         let parameters: [String: Any] = [ "token": userToken ]
         AF.request("https://jfxfba.deta.dev/checkToken", method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseDecodable(of: Account.self) { response in
             if let value = response.value {
