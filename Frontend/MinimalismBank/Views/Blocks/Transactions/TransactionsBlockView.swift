@@ -6,7 +6,6 @@ import SwiftUI
 
 struct TransactionsBlockView: View {
     @Environment(\.colorScheme) var colorScheme
-    @State var allTransactionViewOn = false
     var accountData: Account?
     var sessionData: Session
     var backgroundColor: Color { colorScheme == .light ? Color.white : Color.lightDark }
@@ -31,19 +30,15 @@ struct TransactionsBlockView: View {
                         }
                         if let transactionsCount = accountData?.transactionsCount {
                             if transactionsCount > 5 {
-                                NavigationLink(isActive: $allTransactionViewOn) {
-                                    AllTransactionsScreen(sessionData: sessionData)
-                                } label: {
-                                    Button { allTransactionViewOn.toggle() } label: {
-                                        VStack {
-                                            Divider()
-                                            HStack {
-                                                Text("allTransactions").bold()
-                                                Image(systemName: "chevron.forward")
-                                            }
+                                NavigationLink(destination: AllTransactionsScreen(sessionData: sessionData)) {
+                                    VStack {
+                                        Divider()
+                                        HStack {
+                                            Text("allTransactions").bold()
+                                            Image(systemName: "chevron.forward")
                                         }
-                                    }.foregroundColor(colorScheme == .light ? Color.black : Color.white)
-                                }
+                                    }
+                                }.foregroundColor(colorScheme == .light ? Color.black : Color.white)
                             }
                         }
                     } else {
