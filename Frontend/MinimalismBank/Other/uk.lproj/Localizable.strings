@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  SimpleBank
+
+  Created by Evhen Gruzinov on 17.11.2022.
+  
+*/
+
+// Main screen and its child's
+"balance" = "Баланс";
+"recentTransactions" = "Нещодавні транзакції";
+"noInternet" = "**Відсутнє підключення до мережі**";
+"noInternetDescription" = "Будь ласка, перевірте підключення до Інтернету та спробуйте ще раз";
+
+
+// Transactions elements
+"shopping" = "Покупки";
+"grocery" = "Бакалія";
+"restaurants" = "Ресторани";
+"electronic" = "Електроніка";
+"household" = "Квартплата";
+"cellular" = "Зв'язок";
+"beauty" = "Краса";
+"health" = "Здоров'я";
+"auto" = "Авто";
+"salary" = "Зарплата";
+"transfer" = "Переказ";
+"unknown" = "Невідомо";
+
+"in_progress" = "Виконується";
+"performed" = "Виконано";
+"rejected" = "Відхилено";

@@ -1,4 +1,4 @@
-# Simple Bank
+# Minimalism Bank
 
 Bank for those who value their time and like minimalism in everything. Manage your finances right from your phone, in just a few taps.
 
@@ -9,8 +9,8 @@ Bank for those who value their time and like minimalism in everything. Manage yo
 ## Technical Requirements
 
 - **Min. iOS version:** 14.0
-- **Client:** Swift, [Alamofire](https://github.com/Alamofire/Alamofire)
-- **Server:** Python 3 + FastApi
+- **Client:** Swift, CocoaPods, [Alamofire](https://github.com/Alamofire/Alamofire)
+- **Server:** Python 3 + FastApi + MySQL
 - **License:** [MIT](License.md)
 
 
@@ -19,15 +19,11 @@ Bank for those who value their time and like minimalism in everything. Manage yo
 
 - Design
 - Main functionality:
-  - Balance
-
   - Transfer money
 
   - Recieve money
 
   - Payments
-
-  - History of payments
 
 - Registration
 - Log-in

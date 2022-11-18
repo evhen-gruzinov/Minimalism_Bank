@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  SimpleBank
+
+  Created by Evhen Gruzinov on 17.11.2022.
+  
+*/
+
+// Main screen and its child's
+"balance" = "Balance";
+"recentTransactions" = "Recent transactions";
+"noInternet" = "**No network connection**";
+"noInternetDescription" = "Please check your internet connection and try again";
+
+
+// Transactions elements
+"shopping" = "Shopping";
+"grocery" = "Grocery";
+"restaurants" = "Restaurants";
+"electronic" = "Electronics";
+"household" = "Quarterly";
+"cellular" = "Cellular";
+"beauty" = "Beauty";
+"health" = "Health";
+"auto" = "Auto";
+"salary" = "Salary";
+"transfer" = "Transfer";
+"unknown" = "Unknown";
+
+"in_progress" = "In progress";
+"performed" = "Performed";
+"rejected" = "Rejected";

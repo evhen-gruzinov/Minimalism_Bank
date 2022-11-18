@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28AF098815B7C5D634D2ABAB /* MinimalismBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AF0FBD90F283EAE56A88E9 /* MinimalismBankTests.swift */; };
+		48686C9071F7CDDDD82B38B5 /* Pods_MinimalismBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02427892C97D39DC6E2092BD /* Pods_MinimalismBank.framework */; };
+		493D76AC2926C81D00A36F34 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D76AB2926C81D00A36F34 /* NetworkManager.swift */; };
+		493D76AF2926C86E00A36F34 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D76AE2926C86E00A36F34 /* NoInternetView.swift */; };
+		496508762926AE64004E1D5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496508782926AE64004E1D5F /* Localizable.strings */; };
+		499A5C7F29250EB20092550C /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A5C7E29250EB20092550C /* PullToRefresh.swift */; };
+		49A11D4E291E36F500A7307E /* TransactionsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */; };
+		49A11D52291E3EF300A7307E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A11D51291E3EF300A7307E /* Color.swift */; };
+		49B3C175291AC11500426145 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C174291AC11500426145 /* Account.swift */; };
+		49B3C177291B1AF800426145 /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3C176291B1AF800426145 /* Formatting.swift */; };
+		49D36F69291A4C80002CEF2F /* MinimalismBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F68291A4C80002CEF2F /* MinimalismBankApp.swift */; };
+		49D36F6B291A4C80002CEF2F /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F6A291A4C80002CEF2F /* MainScreen.swift */; };
+		49D36F6D291A4C83002CEF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D36F6C291A4C83002CEF2F /* Assets.xcassets */; };
+		49D36F70291A4C83002CEF2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */; };
+		49D36F80291A517D002CEF2F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F7F291A517D002CEF2F /* Double.swift */; };
+		49D36F83291A5AEB002CEF2F /* BalanceBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D36F82291A5AEB002CEF2F /* BalanceBlockView.swift */; };
+		49FA1175291BC1C50043E560 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1174291BC1C50043E560 /* Transaction.swift */; };
+		49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA1176291BF41C0043E560 /* TransactionView.swift */; };
+		EC203B4A7A4D096CA7F4898E /* Pods_MinimalismBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D3399B70064082C8155901 /* Pods_MinimalismBankTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4981B75B291CF5A900AE497F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D36F5D291A4C80002CEF2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D36F64291A4C80002CEF2F;
+			remoteInfo = SimpleBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02427892C97D39DC6E2092BD /* Pods_MinimalismBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinimalismBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A5519509F980B341BC202A /* Pods-MinimalismBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalismBankTests.release.xcconfig"; path = "Target Support Files/Pods-MinimalismBankTests/Pods-MinimalismBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		28AF0FBD90F283EAE56A88E9 /* MinimalismBankTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimalismBankTests.swift; sourceTree = "<group>"; };
+		3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		493D76AB2926C81D00A36F34 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		493D76AE2926C86E00A36F34 /* NoInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
+		496508772926AE64004E1D5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		496508792926AE66004E1D5F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4981B757291CF5A900AE497F /* MinimalismBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalismBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		499A5C7E29250EB20092550C /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsBlockView.swift; sourceTree = "<group>"; };
+		49A11D51291E3EF300A7307E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		49B3C174291AC11500426145 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		49B3C176291B1AF800426145 /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		49D36F65291A4C80002CEF2F /* MinimalismBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinimalismBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D36F68291A4C80002CEF2F /* MinimalismBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalismBankApp.swift; sourceTree = "<group>"; };
+		49D36F6A291A4C80002CEF2F /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		49D36F6C291A4C83002CEF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49D36F7F291A517D002CEF2F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		49D36F82291A5AEB002CEF2F /* BalanceBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceBlockView.swift; sourceTree = "<group>"; };
+		49FA1174291BC1C50043E560 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		49FA1176291BF41C0043E560 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		5E43F251335953BC7C5B3CE6 /* Pods-SimpleBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBank.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBank/Pods-SimpleBank.debug.xcconfig"; sourceTree = "<group>"; };
+		94866A851FA82C3AD35D2B18 /* Pods-MinimalismBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalismBankTests.debug.xcconfig"; path = "Target Support Files/Pods-MinimalismBankTests/Pods-MinimalismBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FD21AE6E649335E1168E746 /* Pods-SimpleBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBank.release.xcconfig"; path = "Target Support Files/Pods-SimpleBank/Pods-SimpleBank.release.xcconfig"; sourceTree = "<group>"; };
+		AA0B07C347150CACBC0626C9 /* Pods-SimpleBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBankTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleBankTests/Pods-SimpleBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3D3399B70064082C8155901 /* Pods_MinimalismBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinimalismBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C889067BF9A7B83A3BDF8164 /* Pods-MinimalismBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalismBank.release.xcconfig"; path = "Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank.release.xcconfig"; sourceTree = "<group>"; };
+		D7CFB54BC8F04C6A12A2992D /* Pods-MinimalismBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinimalismBank.debug.xcconfig"; path = "Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4981B754291CF5A900AE497F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC203B4A7A4D096CA7F4898E /* Pods_MinimalismBankTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D36F62291A4C80002CEF2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48686C9071F7CDDDD82B38B5 /* Pods_MinimalismBank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02EC4F16A1806C033A36C40F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02427892C97D39DC6E2092BD /* Pods_MinimalismBank.framework */,
+				C3D3399B70064082C8155901 /* Pods_MinimalismBankTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E3E069F674F6B797E936F64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E43F251335953BC7C5B3CE6 /* Pods-SimpleBank.debug.xcconfig */,
+				9FD21AE6E649335E1168E746 /* Pods-SimpleBank.release.xcconfig */,
+				3C3C2F5536B6E420843E86A9 /* Pods-SimpleBankTests.debug.xcconfig */,
+				AA0B07C347150CACBC0626C9 /* Pods-SimpleBankTests.release.xcconfig */,
+				D7CFB54BC8F04C6A12A2992D /* Pods-MinimalismBank.debug.xcconfig */,
+				C889067BF9A7B83A3BDF8164 /* Pods-MinimalismBank.release.xcconfig */,
+				94866A851FA82C3AD35D2B18 /* Pods-MinimalismBankTests.debug.xcconfig */,
+				18A5519509F980B341BC202A /* Pods-MinimalismBankTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		493D76AD2926C84E00A36F34 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				49FA1176291BF41C0043E560 /* TransactionView.swift */,
+				49A11D4D291E36F500A7307E /* TransactionsBlockView.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		496508752926AE4B004E1D5F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F6C291A4C83002CEF2F /* Assets.xcassets */,
+				496508782926AE64004E1D5F /* Localizable.strings */,
+				49D36F6E291A4C83002CEF2F /* Preview Content */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4981B758291CF5A900AE497F /* MinimalismBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				28AF0FBD90F283EAE56A88E9 /* MinimalismBankTests.swift */,
+			);
+			path = MinimalismBankTests;
+			sourceTree = "<group>";
+		};
+		499A5C7D29250E9B0092550C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				499A5C7E29250EB20092550C /* PullToRefresh.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		49B3C173291AC0E000426145 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49B3C174291AC11500426145 /* Account.swift */,
+				49B3C176291B1AF800426145 /* Formatting.swift */,
+				493D76AB2926C81D00A36F34 /* NetworkManager.swift */,
+				49FA1174291BC1C50043E560 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49D36F5C291A4C80002CEF2F = {
+			isa = PBXGroup;
+			children = (
+				49D36F67291A4C80002CEF2F /* MinimalismBank */,
+				4981B758291CF5A900AE497F /* MinimalismBankTests */,
+				49D36F66291A4C80002CEF2F /* Products */,
+				3E3E069F674F6B797E936F64 /* Pods */,
+				02EC4F16A1806C033A36C40F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49D36F66291A4C80002CEF2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F65291A4C80002CEF2F /* MinimalismBank.app */,
+				4981B757291CF5A900AE497F /* MinimalismBankTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49D36F67291A4C80002CEF2F /* MinimalismBank */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F68291A4C80002CEF2F /* MinimalismBankApp.swift */,
+				49D36F7D291A4F53002CEF2F /* Views */,
+				49B3C173291AC0E000426145 /* Models */,
+				49D36F7E291A5168002CEF2F /* Extentions */,
+				496508752926AE4B004E1D5F /* Other */,
+			);
+			path = MinimalismBank;
+			sourceTree = "<group>";
+		};
+		49D36F6E291A4C83002CEF2F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F6F291A4C83002CEF2F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49D36F7D291A4F53002CEF2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				499A5C7D29250E9B0092550C /* Helpers */,
+				49D36F81291A5AAB002CEF2F /* Blocks */,
+				49D36F6A291A4C80002CEF2F /* MainScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49D36F7E291A5168002CEF2F /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				49D36F7F291A517D002CEF2F /* Double.swift */,
+				49A11D51291E3EF300A7307E /* Color.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		49D36F81291A5AAB002CEF2F /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				493D76AD2926C84E00A36F34 /* Transactions */,
+				49D36F82291A5AEB002CEF2F /* BalanceBlockView.swift */,
+				493D76AE2926C86E00A36F34 /* NoInternetView.swift */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4981B756291CF5A900AE497F /* MinimalismBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4981B75F291CF5A900AE497F /* Build configuration list for PBXNativeTarget "MinimalismBankTests" */;
+			buildPhases = (
+				DBF9D08197123B0C59154D5B /* [CP] Check Pods Manifest.lock */,
+				4981B753291CF5A900AE497F /* Sources */,
+				4981B754291CF5A900AE497F /* Frameworks */,
+				4981B755291CF5A900AE497F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4981B75C291CF5A900AE497F /* PBXTargetDependency */,
+			);
+			name = MinimalismBankTests;
+			productName = SimpleBankTests;
+			productReference = 4981B757291CF5A900AE497F /* MinimalismBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49D36F64291A4C80002CEF2F /* MinimalismBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D36F73291A4C83002CEF2F /* Build configuration list for PBXNativeTarget "MinimalismBank" */;
+			buildPhases = (
+				918CDDC1BFA694528291DB57 /* [CP] Check Pods Manifest.lock */,
+				49D36F61291A4C80002CEF2F /* Sources */,
+				49D36F62291A4C80002CEF2F /* Frameworks */,
+				49D36F63291A4C80002CEF2F /* Resources */,
+				4A0E7A3AF2786D1C3D01FD20 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinimalismBank;
+			productName = SimpleBank;
+			productReference = 49D36F65291A4C80002CEF2F /* MinimalismBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49D36F5D291A4C80002CEF2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					4981B756291CF5A900AE497F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 49D36F64291A4C80002CEF2F;
+					};
+					49D36F64291A4C80002CEF2F = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 49D36F60291A4C80002CEF2F /* Build configuration list for PBXProject "MinimalismBank" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				uk,
+				Base,
+			);
+			mainGroup = 49D36F5C291A4C80002CEF2F;
+			productRefGroup = 49D36F66291A4C80002CEF2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49D36F64291A4C80002CEF2F /* MinimalismBank */,
+				4981B756291CF5A900AE497F /* MinimalismBankTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4981B755291CF5A900AE497F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D36F63291A4C80002CEF2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D36F70291A4C83002CEF2F /* Preview Assets.xcassets in Resources */,
+				496508762926AE64004E1D5F /* Localizable.strings in Resources */,
+				49D36F6D291A4C83002CEF2F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A0E7A3AF2786D1C3D01FD20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MinimalismBank/Pods-MinimalismBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		918CDDC1BFA694528291DB57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MinimalismBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF9D08197123B0C59154D5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MinimalismBankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4981B753291CF5A900AE497F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AF098815B7C5D634D2ABAB /* MinimalismBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D36F61291A4C80002CEF2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493D76AC2926C81D00A36F34 /* NetworkManager.swift in Sources */,
+				49A11D4E291E36F500A7307E /* TransactionsBlockView.swift in Sources */,
+				49D36F6B291A4C80002CEF2F /* MainScreen.swift in Sources */,
+				49D36F83291A5AEB002CEF2F /* BalanceBlockView.swift in Sources */,
+				499A5C7F29250EB20092550C /* PullToRefresh.swift in Sources */,
+				49A11D52291E3EF300A7307E /* Color.swift in Sources */,
+				49FA1177291BF41D0043E560 /* TransactionView.swift in Sources */,
+				49FA1175291BC1C50043E560 /* Transaction.swift in Sources */,
+				49D36F80291A517D002CEF2F /* Double.swift in Sources */,
+				49B3C175291AC11500426145 /* Account.swift in Sources */,
+				49D36F69291A4C80002CEF2F /* MinimalismBankApp.swift in Sources */,
+				493D76AF2926C86E00A36F34 /* NoInternetView.swift in Sources */,
+				49B3C177291B1AF800426145 /* Formatting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4981B75C291CF5A900AE497F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D36F64291A4C80002CEF2F /* MinimalismBank */;
+			targetProxy = 4981B75B291CF5A900AE497F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		496508782926AE64004E1D5F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496508772926AE64004E1D5F /* en */,
+				496508792926AE66004E1D5F /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4981B75D291CF5A900AE497F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94866A851FA82C3AD35D2B18 /* Pods-MinimalismBankTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4PV26QJD2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.SimpleBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimalismBank.app/MinimalismBank";
+			};
+			name = Debug;
+		};
+		4981B75E291CF5A900AE497F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A5519509F980B341BC202A /* Pods-MinimalismBankTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4PV26QJD2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.SimpleBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimalismBank.app/MinimalismBank";
+			};
+			name = Release;
+		};
+		49D36F71291A4C83002CEF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49D36F72291A4C83002CEF2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49D36F74291A4C83002CEF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7CFB54BC8F04C6A12A2992D /* Pods-MinimalismBank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MinimalismBank/Other/Preview Content\"";
+				DEVELOPMENT_TEAM = G4PV26QJD2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Minimalism Bank";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.MinimalismBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		49D36F75291A4C83002CEF2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C889067BF9A7B83A3BDF8164 /* Pods-MinimalismBank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MinimalismBank/Other/Preview Content\"";
+				DEVELOPMENT_TEAM = G4PV26QJD2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Minimalism Bank";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gruzinov.MinimalismBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4981B75F291CF5A900AE497F /* Build configuration list for PBXNativeTarget "MinimalismBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4981B75D291CF5A900AE497F /* Debug */,
+				4981B75E291CF5A900AE497F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		49D36F60291A4C80002CEF2F /* Build configuration list for PBXProject "MinimalismBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D36F71291A4C83002CEF2F /* Debug */,
+				49D36F72291A4C83002CEF2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		49D36F73291A4C83002CEF2F /* Build configuration list for PBXNativeTarget "MinimalismBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D36F74291A4C83002CEF2F /* Debug */,
+				49D36F75291A4C83002CEF2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49D36F5D291A4C80002CEF2F /* Project object */;
+}
